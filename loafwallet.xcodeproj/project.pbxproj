@@ -310,6 +310,8 @@
 		22C431341DF89DFE0017CAEA /* BRCoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431331DF89DFE0017CAEA /* BRCoderTests.swift */; };
 		22C431361DF8A6DF0017CAEA /* BRAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431351DF8A6DF0017CAEA /* BRAPIClientTests.swift */; };
 		22E773041EE7813000397E0E /* Bonjour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E773031EE7813000397E0E /* Bonjour.swift */; };
+		243F2814231FA264008D577A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243F2813231FA263008D577A /* GoogleService-Info.plist */; };
+		243F2815231FA264008D577A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243F2813231FA263008D577A /* GoogleService-Info.plist */; };
 		24A6DCFB2230BD9000505F44 /* WipeEmptyWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A6DCFA2230BD9000505F44 /* WipeEmptyWalletViewController.swift */; };
 		24A6DCFC2230BD9000505F44 /* WipeEmptyWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A6DCFA2230BD9000505F44 /* WipeEmptyWalletViewController.swift */; };
 		24AF00FD221B331D00FF636F /* WarningConfirmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24AF00FC221B331D00FF636F /* WarningConfirmation.storyboard */; };
@@ -1112,6 +1114,7 @@
 		22C431331DF89DFE0017CAEA /* BRCoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRCoderTests.swift; sourceTree = "<group>"; };
 		22C431351DF8A6DF0017CAEA /* BRAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRAPIClientTests.swift; sourceTree = "<group>"; };
 		22E773031EE7813000397E0E /* Bonjour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bonjour.swift; sourceTree = "<group>"; };
+		243F2813231FA263008D577A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		24A6DCFA2230BD9000505F44 /* WipeEmptyWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipeEmptyWalletViewController.swift; sourceTree = "<group>"; };
 		24AF00FC221B331D00FF636F /* WarningConfirmation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WarningConfirmation.storyboard; sourceTree = "<group>"; };
 		24AF00FF221B349100FF636F /* WarningConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningConfirmationViewController.swift; sourceTree = "<group>"; };
@@ -3336,6 +3339,7 @@
 				CE5E6C991EB9135000A476DB /* Icon.xcassets */,
 				75A2A79C1DA5934300A983D8 /* LaunchScreen.storyboard */,
 				75A2A79F1DA5934300A983D8 /* Info.plist */,
+				243F2813231FA263008D577A /* GoogleService-Info.plist */,
 				1B86CEBE2091538B00BCE82E /* Dev.plist */,
 			);
 			path = loafwallet;
@@ -4378,6 +4382,7 @@
 				1B86CEA62091528B00BCE82E /* CircularPro-Medium.otf in Resources */,
 				1B86CEA72091528B00BCE82E /* CircularPro-Bold.otf in Resources */,
 				1B86CEA92091528B00BCE82E /* Assets.xcassets in Resources */,
+				243F2814231FA264008D577A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4437,6 +4442,7 @@
 				CEAA9EA41DC2FC700066731D /* CircularPro-Medium.otf in Resources */,
 				CEAA9E9E1DC2F90C0066731D /* CircularPro-Bold.otf in Resources */,
 				75A2A79B1DA5934300A983D8 /* Assets.xcassets in Resources */,
+				243F2815231FA264008D577A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4568,12 +4574,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-loafwallet-dev/Pods-loafwallet-dev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -4628,12 +4640,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-loafwallet/Pods-loafwallet-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

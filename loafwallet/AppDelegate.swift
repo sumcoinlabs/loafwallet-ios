@@ -25,6 +25,7 @@
 
 import UIKit
 import LocalAuthentication
+import Firebase
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -34,7 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let applicationController = ApplicationController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+      
+        FirebaseApp.configure()
+      
         UIView.swizzleSetFrame()
         applicationController.launch(application: application, options: launchOptions)
         return true
