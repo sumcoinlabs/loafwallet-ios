@@ -190,7 +190,6 @@
 		1B86CE7B2091528B00BCE82E /* StartImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1E5F251EF083A600BD0F72 /* StartImportViewController.swift */; };
 		1B86CE7C2091528B00BCE82E /* MessageUIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25BF921DFDA7A500BC67B6 /* MessageUIPresenter.swift */; };
 		1B86CE7D2091528B00BCE82E /* StartFlowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C90B1DBC59E600C8397A /* StartFlowPresenter.swift */; };
-		1B86CE7E2091528B00BCE82E /* UIColor+BRWAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C8FB1DBB0F3A00C8397A /* UIColor+BRWAdditions.swift */; };
 		1B86CE7F2091528B00BCE82E /* CGContext+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA362691E01150D0061FC0E /* CGContext+Additions.swift */; };
 		1B86CE802091528B00BCE82E /* BRReplicatedKVStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9A9401DF61945000F0016 /* BRReplicatedKVStore.swift */; };
 		1B86CE812091528B00BCE82E /* SecurityCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B6B491E54C0CA00B31405 /* SecurityCenterCell.swift */; };
@@ -337,6 +336,34 @@
 		24D91D0B2166923E0077A619 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91D0A2166923E0077A619 /* UserNotifications.framework */; };
 		24D91D0C216692450077A619 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91D0A2166923E0077A619 /* UserNotifications.framework */; };
 		24D91D0E2166A5480077A619 /* TestnetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0D2166A5480077A619 /* TestnetData.swift */; };
+		24F4887A23215622000FEDC1 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Account.storyboard */; };
+		24F4887B23215622000FEDC1 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Account.storyboard */; };
+		24F4888123222D75000FEDC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4888023222D75000FEDC1 /* MainTabBarController.swift */; };
+		24F4888223222D75000FEDC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4888023222D75000FEDC1 /* MainTabBarController.swift */; };
+		24FC8141232234D700892033 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8140232234D700892033 /* CardViewController.swift */; };
+		24FC8142232234D700892033 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8140232234D700892033 /* CardViewController.swift */; };
+		24FC8144232234F000892033 /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8143232234F000892033 /* SpendViewController.swift */; };
+		24FC8145232234F000892033 /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8143232234F000892033 /* SpendViewController.swift */; };
+		24FC81472322350500892033 /* ReceiveLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81462322350500892033 /* ReceiveLTCViewController.swift */; };
+		24FC81482322350500892033 /* ReceiveLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81462322350500892033 /* ReceiveLTCViewController.swift */; };
+		24FC814A2322351600892033 /* SendLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81492322351600892033 /* SendLTCViewController.swift */; };
+		24FC814B2322351600892033 /* SendLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81492322351600892033 /* SendLTCViewController.swift */; };
+		24FC814D232236B300892033 /* Send.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC814C232236B300892033 /* Send.storyboard */; };
+		24FC814E232236B300892033 /* Send.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC814C232236B300892033 /* Send.storyboard */; };
+		24FC8150232236C000892033 /* Receive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC814F232236C000892033 /* Receive.storyboard */; };
+		24FC8151232236C000892033 /* Receive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC814F232236C000892033 /* Receive.storyboard */; };
+		24FC8153232236CD00892033 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8152232236CD00892033 /* Buy.storyboard */; };
+		24FC8154232236CD00892033 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8152232236CD00892033 /* Buy.storyboard */; };
+		24FC8156232236DF00892033 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8155232236DF00892033 /* Transactions.storyboard */; };
+		24FC8157232236DF00892033 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8155232236DF00892033 /* Transactions.storyboard */; };
+		24FC8159232236F400892033 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8158232236F400892033 /* Card.storyboard */; };
+		24FC815A232236F400892033 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8158232236F400892033 /* Card.storyboard */; };
+		24FC8163232238B300892033 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8162232238B300892033 /* TransactionsViewController.swift */; };
+		24FC8164232238B300892033 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8162232238B300892033 /* TransactionsViewController.swift */; };
+		24FC81672322394500892033 /* BuyLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81662322394500892033 /* BuyLTCViewController.swift */; };
+		24FC81682322394500892033 /* BuyLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81662322394500892033 /* BuyLTCViewController.swift */; };
+		24FC816A232239D500892033 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8169232239D500892033 /* UIColor+Extension.swift */; };
+		24FC816B232239D500892033 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8169232239D500892033 /* UIColor+Extension.swift */; };
 		3BD166DFD921B18812C1591C /* Pods_loafwallet_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A779C1CC307134C60649CC2 /* Pods_loafwallet_dev.framework */; };
 		7503773D1DF57428005EB8AE /* WalletManager+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503773C1DF57428005EB8AE /* WalletManager+Auth.swift */; };
 		751734B91DAC941E00193C87 /* sec-sub-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD8BE1DAA16820075898E /* sec-sub-1.c */; };
@@ -503,7 +530,6 @@
 		CE1E5F261EF083A600BD0F72 /* StartImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1E5F251EF083A600BD0F72 /* StartImportViewController.swift */; };
 		CE20C8F21DBAF71500C8397A /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C8F11DBAF71500C8397A /* ApplicationController.swift */; };
 		CE20C8F61DBAF77D00C8397A /* UIViewController+BRWAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C8F51DBAF77D00C8397A /* UIViewController+BRWAdditions.swift */; };
-		CE20C8FC1DBB0F3A00C8397A /* UIColor+BRWAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C8FB1DBB0F3A00C8397A /* UIColor+BRWAdditions.swift */; };
 		CE20C8FE1DBB133A00C8397A /* SimpleRedux.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C8FD1DBB133A00C8397A /* SimpleRedux.swift */; };
 		CE20C9011DBBFFF800C8397A /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C9001DBBFFF800C8397A /* Actions.swift */; };
 		CE20C9071DBC587200C8397A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C9061DBC587200C8397A /* StartViewController.swift */; };
@@ -1128,6 +1154,20 @@
 		24B8FADE2163C4D400A155B1 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		24D91D0A2166923E0077A619 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		24D91D0D2166A5480077A619 /* TestnetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestnetData.swift; sourceTree = "<group>"; };
+		24F4887923215622000FEDC1 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		24F4888023222D75000FEDC1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		24FC8140232234D700892033 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		24FC8143232234F000892033 /* SpendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewController.swift; sourceTree = "<group>"; };
+		24FC81462322350500892033 /* ReceiveLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveLTCViewController.swift; sourceTree = "<group>"; };
+		24FC81492322351600892033 /* SendLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLTCViewController.swift; sourceTree = "<group>"; };
+		24FC814C232236B300892033 /* Send.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Send.storyboard; sourceTree = "<group>"; };
+		24FC814F232236C000892033 /* Receive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Receive.storyboard; sourceTree = "<group>"; };
+		24FC8152232236CD00892033 /* Buy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Buy.storyboard; sourceTree = "<group>"; };
+		24FC8155232236DF00892033 /* Transactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
+		24FC8158232236F400892033 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		24FC8162232238B300892033 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		24FC81662322394500892033 /* BuyLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyLTCViewController.swift; sourceTree = "<group>"; };
+		24FC8169232239D500892033 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		3BC8557E3049BD3648E832EA /* Pods-loafwallet-dev.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet-dev.testflight.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet-dev/Pods-loafwallet-dev.testflight.xcconfig"; sourceTree = "<group>"; };
 		40A0FB1403D5D476D1CF3AD8 /* Pods-loafwallet-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet-dev/Pods-loafwallet-dev.release.xcconfig"; sourceTree = "<group>"; };
 		4B486D38F519A3F84855782E /* Pods-loafwallet.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet.testnet.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet/Pods-loafwallet.testnet.xcconfig"; sourceTree = "<group>"; };
@@ -1819,7 +1859,6 @@
 		CE1E5F251EF083A600BD0F72 /* StartImportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartImportViewController.swift; path = src/ViewControllers/Import/StartImportViewController.swift; sourceTree = "<group>"; };
 		CE20C8F11DBAF71500C8397A /* ApplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationController.swift; path = src/ApplicationController.swift; sourceTree = "<group>"; };
 		CE20C8F51DBAF77D00C8397A /* UIViewController+BRWAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+BRWAdditions.swift"; path = "src/Extensions/UIViewController+BRWAdditions.swift"; sourceTree = "<group>"; };
-		CE20C8FB1DBB0F3A00C8397A /* UIColor+BRWAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+BRWAdditions.swift"; path = "src/Extensions/UIColor+BRWAdditions.swift"; sourceTree = "<group>"; };
 		CE20C8FD1DBB133A00C8397A /* SimpleRedux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleRedux.swift; path = src/SimpleRedux.swift; sourceTree = "<group>"; };
 		CE20C9001DBBFFF800C8397A /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions.swift; path = src/SimpleRedux/Actions.swift; sourceTree = "<group>"; };
 		CE20C9061DBC587200C8397A /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = src/ViewControllers/StartViewController.swift; sourceTree = "<group>"; };
@@ -2501,6 +2540,12 @@
 			isa = PBXGroup;
 			children = (
 				24AF00FC221B331D00FF636F /* WarningConfirmation.storyboard */,
+				24F4887923215622000FEDC1 /* Account.storyboard */,
+				24FC814C232236B300892033 /* Send.storyboard */,
+				24FC814F232236C000892033 /* Receive.storyboard */,
+				24FC8152232236CD00892033 /* Buy.storyboard */,
+				24FC8155232236DF00892033 /* Transactions.storyboard */,
+				24FC8158232236F400892033 /* Card.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -2539,6 +2584,63 @@
 				24B8FAD12162B10200A155B1 /* BuyCenterWebViewController.swift */,
 			);
 			name = BuyCenter;
+			sourceTree = "<group>";
+		};
+		24F4887C2321571B000FEDC1 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				CEBF32EF1DDCD30600348FC6 /* AccountViewController.swift */,
+				24F4888023222D75000FEDC1 /* MainTabBarController.swift */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		24FC813C2322349400892033 /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				24FC81492322351600892033 /* SendLTCViewController.swift */,
+			);
+			name = Send;
+			sourceTree = "<group>";
+		};
+		24FC813D2322349B00892033 /* Receive */ = {
+			isa = PBXGroup;
+			children = (
+				24FC81462322350500892033 /* ReceiveLTCViewController.swift */,
+			);
+			name = Receive;
+			sourceTree = "<group>";
+		};
+		24FC813E232234A500892033 /* Spend */ = {
+			isa = PBXGroup;
+			children = (
+				24FC8143232234F000892033 /* SpendViewController.swift */,
+			);
+			name = Spend;
+			sourceTree = "<group>";
+		};
+		24FC813F232234AE00892033 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				24FC8140232234D700892033 /* CardViewController.swift */,
+			);
+			name = Card;
+			sourceTree = "<group>";
+		};
+		24FC815B2322383D00892033 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				24FC8162232238B300892033 /* TransactionsViewController.swift */,
+			);
+			name = Transactions;
+			sourceTree = "<group>";
+		};
+		24FC81652322392A00892033 /* Buy */ = {
+			isa = PBXGroup;
+			children = (
+				24FC81662322394500892033 /* BuyLTCViewController.swift */,
+			);
+			name = Buy;
 			sourceTree = "<group>";
 		};
 		53710BD444CAD3FF0E91537C /* Pods */ = {
@@ -3510,6 +3612,13 @@
 		CE20C8EF1DBAF6D300C8397A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				24FC81652322392A00892033 /* Buy */,
+				24FC815B2322383D00892033 /* Transactions */,
+				24FC813F232234AE00892033 /* Card */,
+				24FC813E232234A500892033 /* Spend */,
+				24FC813D2322349B00892033 /* Receive */,
+				24FC813C2322349400892033 /* Send */,
+				24F4887C2321571B000FEDC1 /* Account */,
 				24A6DCFA2230BD9000505F44 /* WipeEmptyWalletViewController.swift */,
 				CE1E5F241EF081F300BD0F72 /* Import */,
 				CEEC70841E90CCA600EF788E /* Settings */,
@@ -3518,7 +3627,6 @@
 				CE6D0F951DE8B6B600BD4BCF /* ViewControllerTransitions */,
 				24C516502158820E007CE038 /* BuyCenter */,
 				CE760ED71E55F9E000EFAC2B /* SecurityCenter */,
-				CEBF32EF1DDCD30600348FC6 /* AccountViewController.swift */,
 				CE20C9061DBC587200C8397A /* StartViewController.swift */,
 				CEAA9E8E1DC074410066731D /* StartPaperPhraseViewController.swift */,
 				CEAA9E921DC110E70066731D /* WritePaperPhraseViewController.swift */,
@@ -3555,8 +3663,8 @@
 		CE20C8F01DBAF6E100C8397A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				24FC8169232239D500892033 /* UIColor+Extension.swift */,
 				CE20C8F51DBAF77D00C8397A /* UIViewController+BRWAdditions.swift */,
-				CE20C8FB1DBB0F3A00C8397A /* UIColor+BRWAdditions.swift */,
 				CE20C90D1DBE52B000C8397A /* UIView+BRWAdditions.swift */,
 				CE20C9161DBE6F2A00C8397A /* UIButton+BRWAdditions.swift */,
 				CEAA9E901DC0FDFE0066731D /* UIViewPropertyAnimator+BRWAdditions.swift */,
@@ -4369,17 +4477,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24FC814D232236B300892033 /* Send.storyboard in Resources */,
+				24FC8153232236CD00892033 /* Buy.storyboard in Resources */,
 				1B86CE9E2091528B00BCE82E /* BIP39Words.plist in Resources */,
+				24FC8150232236C000892033 /* Receive.storyboard in Resources */,
+				24FC8156232236DF00892033 /* Transactions.storyboard in Resources */,
 				24B8FAD82162B6FB00A155B1 /* bitrefill_index.html in Resources */,
 				1B86CE9F2091528B00BCE82E /* LaunchScreen.storyboard in Resources */,
 				1B86CEA02091528B00BCE82E /* CircularPro-Book.otf in Resources */,
 				1B86CEA12091528B00BCE82E /* POSTBouncer.html in Resources */,
 				24AF00FD221B331D00FF636F /* WarningConfirmation.storyboard in Resources */,
 				1B86CEA22091528B00BCE82E /* coinflip.aiff in Resources */,
+				24F4887A23215622000FEDC1 /* Account.storyboard in Resources */,
 				1B86CEA32091528B00BCE82E /* Icon.xcassets in Resources */,
 				1B86CEA42091528B00BCE82E /* Localizable.strings in Resources */,
 				24B8FADD2162D29100A155B1 /* general.css in Resources */,
 				1B86CEA62091528B00BCE82E /* CircularPro-Medium.otf in Resources */,
+				24FC8159232236F400892033 /* Card.storyboard in Resources */,
 				1B86CEA72091528B00BCE82E /* CircularPro-Bold.otf in Resources */,
 				1B86CEA92091528B00BCE82E /* Assets.xcassets in Resources */,
 				243F2814231FA264008D577A /* GoogleService-Info.plist in Resources */,
@@ -4429,17 +4543,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24FC814E232236B300892033 /* Send.storyboard in Resources */,
+				24FC8154232236CD00892033 /* Buy.storyboard in Resources */,
 				CE4C1CD01ED8BCC70063E184 /* BIP39Words.plist in Resources */,
+				24FC8151232236C000892033 /* Receive.storyboard in Resources */,
+				24FC8157232236DF00892033 /* Transactions.storyboard in Resources */,
 				24B8FAD72162B6FB00A155B1 /* bitrefill_index.html in Resources */,
 				75A2A79E1DA5934300A983D8 /* LaunchScreen.storyboard in Resources */,
 				CEAA9EA31DC2FC700066731D /* CircularPro-Book.otf in Resources */,
 				222319B21F279B3C00008F20 /* POSTBouncer.html in Resources */,
 				24AF00FE221B331D00FF636F /* WarningConfirmation.storyboard in Resources */,
 				CE473D7C1F042F1E00C0ACFD /* coinflip.aiff in Resources */,
+				24F4887B23215622000FEDC1 /* Account.storyboard in Resources */,
 				CE5E6C9A1EB9135000A476DB /* Icon.xcassets in Resources */,
 				CE29901A1EFD6DE50093A0F2 /* Localizable.strings in Resources */,
 				24B8FADC2162D29100A155B1 /* general.css in Resources */,
 				CEAA9EA41DC2FC700066731D /* CircularPro-Medium.otf in Resources */,
+				24FC815A232236F400892033 /* Card.storyboard in Resources */,
 				CEAA9E9E1DC2F90C0066731D /* CircularPro-Bold.otf in Resources */,
 				75A2A79B1DA5934300A983D8 /* Assets.xcassets in Resources */,
 				243F2815231FA264008D577A /* GoogleService-Info.plist in Resources */,
@@ -4697,6 +4817,7 @@
 				1B86CDCF2091528B00BCE82E /* BRCore.swift in Sources */,
 				1B86CDD02091528B00BCE82E /* BRCameraPlugin.swift in Sources */,
 				1B86CDD12091528B00BCE82E /* CGRect+Additions.swift in Sources */,
+				24FC814A2322351600892033 /* SendLTCViewController.swift in Sources */,
 				1B86CDD22091528B00BCE82E /* WalletInfo.swift in Sources */,
 				1B86CDD32091528B00BCE82E /* TransactionDetailCollectionViewCell.swift in Sources */,
 				1B86CDD42091528B00BCE82E /* RetryTimer.swift in Sources */,
@@ -4756,6 +4877,7 @@
 				1B86CE092091528B00BCE82E /* URLController.swift in Sources */,
 				1B86CE0A2091528B00BCE82E /* UIButton+BRWAdditions.swift in Sources */,
 				1B86CE0B2091528B00BCE82E /* WritePaperPhraseViewController.swift in Sources */,
+				24FC816A232239D500892033 /* UIColor+Extension.swift in Sources */,
 				1B86CE0C2091528B00BCE82E /* UIView+AnimationAdditions.swift in Sources */,
 				1B86CE0D2091528B00BCE82E /* DefaultCurrencyViewController.swift in Sources */,
 				24B8FAC5216128A000A155B1 /* PartnerData.swift in Sources */,
@@ -4766,6 +4888,7 @@
 				24B8FAC22160497C00A155B1 /* BuyCenterTableViewController.swift in Sources */,
 				1B86CE122091528B00BCE82E /* ModalPresenter.swift in Sources */,
 				1B86CE132091528B00BCE82E /* BlinkingView.swift in Sources */,
+				24FC81472322350500892033 /* ReceiveLTCViewController.swift in Sources */,
 				1B86CE142091528B00BCE82E /* ModalViewController.swift in Sources */,
 				1B86CE152091528B00BCE82E /* Setting.swift in Sources */,
 				1B86CE162091528B00BCE82E /* LoadingProgressView.swift in Sources */,
@@ -4805,6 +4928,7 @@
 				1B86CE352091528B00BCE82E /* CheckView.swift in Sources */,
 				1B86CE362091528B00BCE82E /* PinPadViewController.swift in Sources */,
 				1B86CE372091528B00BCE82E /* UISlider+Gradient.swift in Sources */,
+				24FC8141232234D700892033 /* CardViewController.swift in Sources */,
 				1B86CE382091528B00BCE82E /* MenuButtonType.swift in Sources */,
 				1B86CE392091528B00BCE82E /* BRActivityView.swift in Sources */,
 				1B86CE3A2091528B00BCE82E /* ReceiveViewController.swift in Sources */,
@@ -4827,6 +4951,7 @@
 				1B86CE4B2091528B00BCE82E /* Sender.swift in Sources */,
 				1B86CE4C2091528B00BCE82E /* ReScanViewController.swift in Sources */,
 				1B86CE4D2091528B00BCE82E /* WalletManager+BCash.swift in Sources */,
+				24FC81672322394500892033 /* BuyLTCViewController.swift in Sources */,
 				1B86CE4E2091528B00BCE82E /* SearchHeaderView.swift in Sources */,
 				1B86CE4F2091528B00BCE82E /* BRTar.swift in Sources */,
 				1B86CE502091528B00BCE82E /* TransactionDetailsViewController.swift in Sources */,
@@ -4852,6 +4977,7 @@
 				1B86CE642091528B00BCE82E /* Transaction.swift in Sources */,
 				1B86CE652091528B00BCE82E /* UIViewPropertyAnimator+BRWAdditions.swift in Sources */,
 				1B86CE662091528B00BCE82E /* Bonjour.swift in Sources */,
+				24F4888123222D75000FEDC1 /* MainTabBarController.swift in Sources */,
 				1B86CE672091528B00BCE82E /* UIFont+BRWAdditions.swift in Sources */,
 				1B86CE682091528B00BCE82E /* MenuButton.swift in Sources */,
 				1B86CE692091528B00BCE82E /* AmountViewController.swift in Sources */,
@@ -4870,13 +4996,13 @@
 				1B86CE752091528B00BCE82E /* UserDefaults+Additions.swift in Sources */,
 				1B86CE762091528B00BCE82E /* BRHTTPServer.swift in Sources */,
 				1B86CE772091528B00BCE82E /* BRLinkPlugin.swift in Sources */,
+				24FC8144232234F000892033 /* SpendViewController.swift in Sources */,
 				1B86CE782091528B00BCE82E /* ReachabilityMonitor.swift in Sources */,
 				1B86CE792091528B00BCE82E /* BRWebSocket.swift in Sources */,
 				1B86CE7A2091528B00BCE82E /* ShareDataViewController.swift in Sources */,
 				1B86CE7B2091528B00BCE82E /* StartImportViewController.swift in Sources */,
 				1B86CE7C2091528B00BCE82E /* MessageUIPresenter.swift in Sources */,
 				1B86CE7D2091528B00BCE82E /* StartFlowPresenter.swift in Sources */,
-				1B86CE7E2091528B00BCE82E /* UIColor+BRWAdditions.swift in Sources */,
 				1B86CE7F2091528B00BCE82E /* CGContext+Additions.swift in Sources */,
 				1B86CE802091528B00BCE82E /* BRReplicatedKVStore.swift in Sources */,
 				1B86CE812091528B00BCE82E /* SecurityCenterCell.swift in Sources */,
@@ -4891,6 +5017,7 @@
 				1B86CE8A2091528B00BCE82E /* AccountFooterView.swift in Sources */,
 				1B86CE8B2091528B00BCE82E /* String+Additions.swift in Sources */,
 				1B86CE8C2091528B00BCE82E /* InAppAlert.swift in Sources */,
+				24FC8163232238B300892033 /* TransactionsViewController.swift in Sources */,
 				1B86CE8D2091528B00BCE82E /* UIScreen+Additions.swift in Sources */,
 				1B86CE8E2091528B00BCE82E /* MaskedShadow.swift in Sources */,
 				1B86CE8F2091528B00BCE82E /* AssociatedObject.swift in Sources */,
@@ -5053,6 +5180,7 @@
 				754AE0BC1DFE8A46007FD001 /* BRCore.swift in Sources */,
 				22A9A94A1DF61945000F0016 /* BRCameraPlugin.swift in Sources */,
 				CEC6AA3B1DEE4EB000EE5AFD /* CGRect+Additions.swift in Sources */,
+				24FC8142232234D700892033 /* CardViewController.swift in Sources */,
 				CE45C1FB1E74F89C002C3847 /* WalletInfo.swift in Sources */,
 				CE14E40B1E4D881500AEA83A /* TransactionDetailCollectionViewCell.swift in Sources */,
 				CEE659E71F65A936001FF29D /* RetryTimer.swift in Sources */,
@@ -5138,10 +5266,12 @@
 				CE6BCF5D1EE9E89A0029849C /* CustomTitleView.swift in Sources */,
 				CE2DC1391EBC36EE000FE727 /* Prompt.swift in Sources */,
 				CE83DE2A1E9EB7F600D07636 /* SendAmountCell.swift in Sources */,
+				24FC8164232238B300892033 /* TransactionsViewController.swift in Sources */,
 				22A9A9521DF61945000F0016 /* BRKVStorePlugin.swift in Sources */,
 				CEAFC8611E5D5B0500E4FD06 /* SegmentedButton.swift in Sources */,
 				CE30F0E61EB27844004B8EE5 /* PhoneWCSessionManager.swift in Sources */,
 				7503773D1DF57428005EB8AE /* WalletManager+Auth.swift in Sources */,
+				24FC814B2322351600892033 /* SendLTCViewController.swift in Sources */,
 				22A9A9581DF61945000F0016 /* BRWebViewController.swift in Sources */,
 				CEC4CF091F0C84AB00E5C82E /* UIViewController+Alerts.swift in Sources */,
 				CE27F9591E2C8EA300F7F7F2 /* Amount.swift in Sources */,
@@ -5153,6 +5283,7 @@
 				75A2A7941DA5934300A983D8 /* AppDelegate.swift in Sources */,
 				CEEC70901E95D5C100EF788E /* PushNotificationsViewController.swift in Sources */,
 				24B8FACA2161632C00A155B1 /* BuyCenterHeaderView.swift in Sources */,
+				24FC816B232239D500892033 /* UIColor+Extension.swift in Sources */,
 				24B8FADF2163C4D400A155B1 /* Currency.swift in Sources */,
 				24B8FAC721615E3D00A155B1 /* BuyCenterTableViewCell.swift in Sources */,
 				222C42501E90492800078EB5 /* BRAPIClient+KV.swift in Sources */,
@@ -5166,7 +5297,9 @@
 				CE4CA7BC1EE3649100373F11 /* BRActivityView.swift in Sources */,
 				CEC6AA421DEFC88F00EE5AFD /* ReceiveViewController.swift in Sources */,
 				CEE20C2D1EA288FA0086F724 /* UpdatingLabel.swift in Sources */,
+				24F4888223222D75000FEDC1 /* MainTabBarController.swift in Sources */,
 				CE3D4C591EF743EF0016B1C8 /* Functions.swift in Sources */,
+				24FC81482322350500892033 /* ReceiveLTCViewController.swift in Sources */,
 				CEE20C341EA5B4550086F724 /* ArticleIds.swift in Sources */,
 				CEE65DF01E39056F0002994D /* Rate.swift in Sources */,
 				CEE20C361EA5B4620086F724 /* Constants.swift in Sources */,
@@ -5184,6 +5317,7 @@
 				CE8CD8DD1E2D9EF200785E02 /* Sender.swift in Sources */,
 				CE4DFB2C1E9BE5880014009E /* ReScanViewController.swift in Sources */,
 				CE44BA1F1F353AB200392A1A /* WalletManager+BCash.swift in Sources */,
+				24FC8145232234F000892033 /* SpendViewController.swift in Sources */,
 				CE8F0AE31EB91BB500AA7642 /* SearchHeaderView.swift in Sources */,
 				22A9A9551DF61945000F0016 /* BRTar.swift in Sources */,
 				CE14E4091E4D506000AEA83A /* TransactionDetailsViewController.swift in Sources */,
@@ -5205,6 +5339,7 @@
 				CEF3E8361DE60222007C0A9E /* ModalNavigationController.swift in Sources */,
 				CED811E21EB302DD003A8D1E /* WatchTransaction.swift in Sources */,
 				CEB909FA1E5FF242001804DC /* RecoverWalletIntroViewController.swift in Sources */,
+				24FC81682322394500892033 /* BuyLTCViewController.swift in Sources */,
 				CE25BF911DF9ADE700BC67B6 /* UIImage+Utils.swift in Sources */,
 				CEBF33041DDE17A600348FC6 /* Transaction.swift in Sources */,
 				CEAA9E911DC0FDFE0066731D /* UIViewPropertyAnimator+BRWAdditions.swift in Sources */,
@@ -5233,7 +5368,6 @@
 				CE1E5F261EF083A600BD0F72 /* StartImportViewController.swift in Sources */,
 				CE25BF931DFDA7A600BC67B6 /* MessageUIPresenter.swift in Sources */,
 				CE20C90C1DBC59E600C8397A /* StartFlowPresenter.swift in Sources */,
-				CE20C8FC1DBB0F3A00C8397A /* UIColor+BRWAdditions.swift in Sources */,
 				CEA3626A1E01150D0061FC0E /* CGContext+Additions.swift in Sources */,
 				22A9A9541DF61945000F0016 /* BRReplicatedKVStore.swift in Sources */,
 				CE6B6B4A1E54C0CB00B31405 /* SecurityCenterCell.swift in Sources */,

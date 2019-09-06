@@ -15,16 +15,16 @@ private let transactionsLoadingViewHeightConstant: CGFloat = 48.0
 
 class AccountViewController : UIViewController, Subscriber {
 
-    //MARK: - Public
-    var sendCallback: (() -> Void)? {
-        didSet { footerView.sendCallback = sendCallback }
-    }
-    var receiveCallback: (() -> Void)? {
-        didSet { footerView.receiveCallback = receiveCallback }
-    }
-    var menuCallback: (() -> Void)? {
-        didSet { footerView.menuCallback = menuCallback }
-    }
+//    //MARK: - Public
+//    var sendCallback: (() -> Void)? {
+//        didSet { footerView.sendCallback = sendCallback }
+//    }
+//    var receiveCallback: (() -> Void)? {
+//        didSet { footerView.receiveCallback = receiveCallback }
+//    }
+//    var menuCallback: (() -> Void)? {
+//        didSet { footerView.menuCallback = menuCallback }
+//    }
 
     var walletManager: WalletManager? {
         didSet {
@@ -68,7 +68,7 @@ class AccountViewController : UIViewController, Subscriber {
     private let tempLoginView: LoginViewController
     private let loginTransitionDelegate = LoginTransitionDelegate()
     private let welcomeTransitingDelegate = PinTransitioningDelegate()
-
+ 
     private let searchHeaderview: SearchHeaderView = {
         let view = SearchHeaderView()
         view.isHidden = true
@@ -88,6 +88,8 @@ class AccountViewController : UIViewController, Subscriber {
     private var didEndLoading = false
 
     override func viewDidLoad() {
+      
+
         // detect jailbreak so we can throw up an idiot warning, in viewDidLoad so it can't easily be swizzled out
         if !E.isSimulator {
             var s = stat()
@@ -110,25 +112,40 @@ class AccountViewController : UIViewController, Subscriber {
                 self.footerView.refreshButtonStatus()
             }
         }
-        
-        addTransactionsView()
-        addSubviews()
-        addConstraints()
-        addSubscriptions()
+      
+      
+      
+//        addTransactionsView()
+//        addSubviews()
+//        addConstraints()
+//        addSubscriptions()
         addAppLifecycleNotificationEvents()
         addTemporaryStartupViews()
         setInitialData()
+        addContainerView()
+    }
+  
+    func addContainerView() { 
+      if let vc = UIStoryboard.init(name: "Account", bundle: nil).instantiateViewController(withIdentifier: "MainTabBarController") as? MainTabBarController {
+        addChildViewController(vc) {
+          vc.view.constrain(toSuperviewEdges: nil)
+        }
+      }
+       
+    
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         shouldShowStatusBar = true
+      
+
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-
+  
     private func addSubviews() {
         view.addSubview(headerContainer)
         headerContainer.addSubview(headerView)
