@@ -26,7 +26,7 @@ class ApplicationController : Subscriber, Trackable {
     private var feeUpdater: FeeUpdater?
     private let transitionDelegate: ModalTransitionDelegate
     private var kvStoreCoordinator: KVStoreCoordinator?
-    private var accountViewController: AccountViewController?
+    private var mainViewController: MainViewController?
     fileprivate var application: UIApplication?
     private let watchSessionManager = PhoneWCSessionManager()
     private var urlController: URLController?
@@ -72,7 +72,7 @@ class ApplicationController : Subscriber, Trackable {
                 }
             }
         }
-        //updateAssetBundles()
+      
         if !hasPerformedWalletDependentInitialization && didInitWallet {
             didInitWalletManager()
         }
@@ -171,15 +171,15 @@ class ApplicationController : Subscriber, Trackable {
 
     private func didInitWalletManager() {
         guard let walletManager = walletManager else { assert(false, "WalletManager should exist!"); return }
-        guard let rootViewController = window.rootViewController else { return }
+         guard let rootViewController = window.rootViewController else { return }
         hasPerformedWalletDependentInitialization = true
         store.perform(action: PinLength.set(walletManager.pinLength))
         walletCoordinator = WalletCoordinator(walletManager: walletManager, store: store)
-        modalPresenter = ModalPresenter(store: store, walletManager: walletManager, window: window, apiClient: noAuthApiClient)
+         modalPresenter = ModalPresenter(store: store, walletManager: walletManager, window: window, apiClient: noAuthApiClient)
         exchangeUpdater = ExchangeUpdater(store: store, walletManager: walletManager)
         feeUpdater = FeeUpdater(walletManager: walletManager, store: store)
         startFlowController = StartFlowPresenter(store: store, walletManager: walletManager, rootViewController: rootViewController)
-        accountViewController?.walletManager = walletManager
+        mainViewController?.walletManager = walletManager
         defaultsUpdater = UserDefaultsUpdater(walletManager: walletManager)
         urlController = URLController(store: self.store, walletManager: walletManager)
         if let url = launchURL {
@@ -243,11 +243,8 @@ class ApplicationController : Subscriber, Trackable {
             transactionDetails.modalPresentationCapturesStatusBarAppearance = true
             self.window.rootViewController?.present(transactionDetails, animated: true, completion: nil)
         }
-        accountViewController = AccountViewController(store: store, didSelectTransaction: didSelectTransaction)
-//        accountViewController?.sendCallback = { self.store.perform(action: RootModalActions.Present(modal: .send)) }
-//        accountViewController?.receiveCallback = { self.store.perform(action: RootModalActions.Present(modal: .receive)) }
-//        accountViewController?.menuCallback = { self.store.perform(action: RootModalActions.Present(modal: .menu)) }
-        window.rootViewController = accountViewController
+        mainViewController = MainViewController(store: store, didSelectTransaction: didSelectTransaction)
+        window.rootViewController = mainViewController
     }
 
     private func startDataFetchers() {

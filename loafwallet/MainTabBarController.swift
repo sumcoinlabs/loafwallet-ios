@@ -1,5 +1,5 @@
 //
-//  MainTabBarController.swift
+//  TabBarController.swift
 //  loafwallet
 //
 //  Created by Kerry Washington on 9/5/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
+class TabBarController: UIViewController, UITabBarDelegate {
  
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -49,11 +49,11 @@ class MainTabBarController: UITabBarController {
     receiveVC.tabBarItem = receiveBarItem
     
     let tabBarViewControllers = [transactionsVC, buyVC, cardVC, sendVC, receiveVC]
-    
-    self.tabBar.unselectedItemTintColor = .litecoinSilver
-    self.tabBar.tintColor = .litecoinBlue
-    
-    self.viewControllers  = tabBarViewControllers.map {UINavigationController.init(rootViewController: $0)}
+//    
+//    self.tabBar.unselectedItemTintColor = .litecoinSilver
+//    self.tabBar.tintColor = .litecoinBlue
+//    
+//    self.viewControllers  = tabBarViewControllers.map {UINavigationController.init(rootViewController: $0)}
   }
 
 }

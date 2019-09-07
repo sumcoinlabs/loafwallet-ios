@@ -37,7 +37,7 @@
 		1B86CDE12091528B00BCE82E /* BRHTTPFileMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9A9391DF61945000F0016 /* BRHTTPFileMiddleware.swift */; };
 		1B86CDE22091528B00BCE82E /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8644241F2C160200033129 /* ConfirmationViewController.swift */; };
 		1B86CDE32091528B00BCE82E /* BCashTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44BA1C1F35102D00392A1A /* BCashTransactionViewController.swift */; };
-		1B86CDE42091528B00BCE82E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF32EF1DDCD30600348FC6 /* AccountViewController.swift */; };
+		1B86CDE42091528B00BCE82E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF32EF1DDCD30600348FC6 /* MainViewController.swift */; };
 		1B86CDE52091528B00BCE82E /* ModalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1F5621DF13E5A00D733AD /* ModalHeaderView.swift */; };
 		1B86CDE62091528B00BCE82E /* LoginTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F21DA1E4A93A500C47B8E /* LoginTransitionDelegate.swift */; };
 		1B86CDE72091528B00BCE82E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE659E81F664C73001FF29D /* WelcomeViewController.swift */; };
@@ -336,8 +336,8 @@
 		24D91D0B2166923E0077A619 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91D0A2166923E0077A619 /* UserNotifications.framework */; };
 		24D91D0C216692450077A619 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91D0A2166923E0077A619 /* UserNotifications.framework */; };
 		24D91D0E2166A5480077A619 /* TestnetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0D2166A5480077A619 /* TestnetData.swift */; };
-		24F4887A23215622000FEDC1 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Account.storyboard */; };
-		24F4887B23215622000FEDC1 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Account.storyboard */; };
+		24F4887A23215622000FEDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Main.storyboard */; };
+		24F4887B23215622000FEDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Main.storyboard */; };
 		24F4888123222D75000FEDC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4888023222D75000FEDC1 /* MainTabBarController.swift */; };
 		24F4888223222D75000FEDC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4888023222D75000FEDC1 /* MainTabBarController.swift */; };
 		24FC8141232234D700892033 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8140232234D700892033 /* CardViewController.swift */; };
@@ -364,6 +364,8 @@
 		24FC81682322394500892033 /* BuyLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81662322394500892033 /* BuyLTCViewController.swift */; };
 		24FC816A232239D500892033 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8169232239D500892033 /* UIColor+Extension.swift */; };
 		24FC816B232239D500892033 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8169232239D500892033 /* UIColor+Extension.swift */; };
+		24FC816E2324260100892033 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC816D2324260100892033 /* TabBarViewController.swift */; };
+		24FC816F2324260100892033 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC816D2324260100892033 /* TabBarViewController.swift */; };
 		3BD166DFD921B18812C1591C /* Pods_loafwallet_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A779C1CC307134C60649CC2 /* Pods_loafwallet_dev.framework */; };
 		7503773D1DF57428005EB8AE /* WalletManager+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503773C1DF57428005EB8AE /* WalletManager+Auth.swift */; };
 		751734B91DAC941E00193C87 /* sec-sub-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD8BE1DAA16820075898E /* sec-sub-1.c */; };
@@ -632,7 +634,7 @@
 		CEBF292E1EF99E55005C330A /* LightWeightAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF292D1EF99E55005C330A /* LightWeightAlert.swift */; };
 		CEBF29301EF9D76F005C330A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF292F1EF9D76F005C330A /* Environment.swift */; };
 		CEBF32EE1DDBC30000348FC6 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF32ED1DDBC30000348FC6 /* ShadowButton.swift */; };
-		CEBF32F01DDCD30600348FC6 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF32EF1DDCD30600348FC6 /* AccountViewController.swift */; };
+		CEBF32F01DDCD30600348FC6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF32EF1DDCD30600348FC6 /* MainViewController.swift */; };
 		CEBF32F21DDCE10D00348FC6 /* AccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF32F11DDCE10D00348FC6 /* AccountHeaderView.swift */; };
 		CEBF32F41DDCE12900348FC6 /* AccountFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF32F31DDCE12900348FC6 /* AccountFooterView.swift */; };
 		CEBF32F61DDCEAF900348FC6 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF32F51DDCEAF900348FC6 /* TransactionsTableViewController.swift */; };
@@ -1154,7 +1156,7 @@
 		24B8FADE2163C4D400A155B1 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		24D91D0A2166923E0077A619 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		24D91D0D2166A5480077A619 /* TestnetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestnetData.swift; sourceTree = "<group>"; };
-		24F4887923215622000FEDC1 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		24F4887923215622000FEDC1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24F4888023222D75000FEDC1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		24FC8140232234D700892033 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		24FC8143232234F000892033 /* SpendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewController.swift; sourceTree = "<group>"; };
@@ -1168,6 +1170,7 @@
 		24FC8162232238B300892033 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		24FC81662322394500892033 /* BuyLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyLTCViewController.swift; sourceTree = "<group>"; };
 		24FC8169232239D500892033 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		24FC816D2324260100892033 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3BC8557E3049BD3648E832EA /* Pods-loafwallet-dev.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet-dev.testflight.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet-dev/Pods-loafwallet-dev.testflight.xcconfig"; sourceTree = "<group>"; };
 		40A0FB1403D5D476D1CF3AD8 /* Pods-loafwallet-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet-dev/Pods-loafwallet-dev.release.xcconfig"; sourceTree = "<group>"; };
 		4B486D38F519A3F84855782E /* Pods-loafwallet.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet.testnet.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet/Pods-loafwallet.testnet.xcconfig"; sourceTree = "<group>"; };
@@ -1980,7 +1983,7 @@
 		CEBF292D1EF99E55005C330A /* LightWeightAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightWeightAlert.swift; path = src/Views/LightWeightAlert.swift; sourceTree = "<group>"; };
 		CEBF292F1EF9D76F005C330A /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = src/Environment.swift; sourceTree = "<group>"; };
 		CEBF32ED1DDBC30000348FC6 /* ShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShadowButton.swift; path = src/Views/ShadowButton.swift; sourceTree = "<group>"; };
-		CEBF32EF1DDCD30600348FC6 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountViewController.swift; path = src/ViewControllers/AccountViewController.swift; sourceTree = "<group>"; };
+		CEBF32EF1DDCD30600348FC6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = src/ViewControllers/MainViewController.swift; sourceTree = "<group>"; };
 		CEBF32F11DDCE10D00348FC6 /* AccountHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountHeaderView.swift; path = src/Views/AccountHeaderView.swift; sourceTree = "<group>"; };
 		CEBF32F31DDCE12900348FC6 /* AccountFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountFooterView.swift; path = src/Views/AccountFooterView.swift; sourceTree = "<group>"; };
 		CEBF32F51DDCEAF900348FC6 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionsTableViewController.swift; path = src/ViewControllers/TransactionsTableViewController.swift; sourceTree = "<group>"; };
@@ -2540,7 +2543,7 @@
 			isa = PBXGroup;
 			children = (
 				24AF00FC221B331D00FF636F /* WarningConfirmation.storyboard */,
-				24F4887923215622000FEDC1 /* Account.storyboard */,
+				24F4887923215622000FEDC1 /* Main.storyboard */,
 				24FC814C232236B300892033 /* Send.storyboard */,
 				24FC814F232236C000892033 /* Receive.storyboard */,
 				24FC8152232236CD00892033 /* Buy.storyboard */,
@@ -2589,7 +2592,7 @@
 		24F4887C2321571B000FEDC1 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				CEBF32EF1DDCD30600348FC6 /* AccountViewController.swift */,
+				CEBF32EF1DDCD30600348FC6 /* MainViewController.swift */,
 				24F4888023222D75000FEDC1 /* MainTabBarController.swift */,
 			);
 			name = Account;
@@ -2641,6 +2644,14 @@
 				24FC81662322394500892033 /* BuyLTCViewController.swift */,
 			);
 			name = Buy;
+			sourceTree = "<group>";
+		};
+		24FC816C232425EC00892033 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				24FC816D2324260100892033 /* TabBarViewController.swift */,
+			);
+			name = "Tab Bar";
 			sourceTree = "<group>";
 		};
 		53710BD444CAD3FF0E91537C /* Pods */ = {
@@ -3612,6 +3623,7 @@
 		CE20C8EF1DBAF6D300C8397A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				24FC816C232425EC00892033 /* Tab Bar */,
 				24FC81652322392A00892033 /* Buy */,
 				24FC815B2322383D00892033 /* Transactions */,
 				24FC813F232234AE00892033 /* Card */,
@@ -4488,7 +4500,7 @@
 				1B86CEA12091528B00BCE82E /* POSTBouncer.html in Resources */,
 				24AF00FD221B331D00FF636F /* WarningConfirmation.storyboard in Resources */,
 				1B86CEA22091528B00BCE82E /* coinflip.aiff in Resources */,
-				24F4887A23215622000FEDC1 /* Account.storyboard in Resources */,
+				24F4887A23215622000FEDC1 /* Main.storyboard in Resources */,
 				1B86CEA32091528B00BCE82E /* Icon.xcassets in Resources */,
 				1B86CEA42091528B00BCE82E /* Localizable.strings in Resources */,
 				24B8FADD2162D29100A155B1 /* general.css in Resources */,
@@ -4554,7 +4566,7 @@
 				222319B21F279B3C00008F20 /* POSTBouncer.html in Resources */,
 				24AF00FE221B331D00FF636F /* WarningConfirmation.storyboard in Resources */,
 				CE473D7C1F042F1E00C0ACFD /* coinflip.aiff in Resources */,
-				24F4887B23215622000FEDC1 /* Account.storyboard in Resources */,
+				24F4887B23215622000FEDC1 /* Main.storyboard in Resources */,
 				CE5E6C9A1EB9135000A476DB /* Icon.xcassets in Resources */,
 				CE29901A1EFD6DE50093A0F2 /* Localizable.strings in Resources */,
 				24B8FADC2162D29100A155B1 /* general.css in Resources */,
@@ -4837,7 +4849,7 @@
 				1B86CDE12091528B00BCE82E /* BRHTTPFileMiddleware.swift in Sources */,
 				1B86CDE22091528B00BCE82E /* ConfirmationViewController.swift in Sources */,
 				1B86CDE32091528B00BCE82E /* BCashTransactionViewController.swift in Sources */,
-				1B86CDE42091528B00BCE82E /* AccountViewController.swift in Sources */,
+				1B86CDE42091528B00BCE82E /* MainViewController.swift in Sources */,
 				1B86CDE52091528B00BCE82E /* ModalHeaderView.swift in Sources */,
 				1B86CDE62091528B00BCE82E /* LoginTransitionDelegate.swift in Sources */,
 				1B86CDE72091528B00BCE82E /* WelcomeViewController.swift in Sources */,
@@ -4930,6 +4942,7 @@
 				1B86CE372091528B00BCE82E /* UISlider+Gradient.swift in Sources */,
 				24FC8141232234D700892033 /* CardViewController.swift in Sources */,
 				1B86CE382091528B00BCE82E /* MenuButtonType.swift in Sources */,
+				24FC816E2324260100892033 /* TabBarViewController.swift in Sources */,
 				1B86CE392091528B00BCE82E /* BRActivityView.swift in Sources */,
 				1B86CE3A2091528B00BCE82E /* ReceiveViewController.swift in Sources */,
 				1B86CE3B2091528B00BCE82E /* UpdatingLabel.swift in Sources */,
@@ -5200,7 +5213,7 @@
 				22A9A94D1DF61945000F0016 /* BRHTTPFileMiddleware.swift in Sources */,
 				CE8644251F2C160200033129 /* ConfirmationViewController.swift in Sources */,
 				CE44BA1D1F35102D00392A1A /* BCashTransactionViewController.swift in Sources */,
-				CEBF32F01DDCD30600348FC6 /* AccountViewController.swift in Sources */,
+				CEBF32F01DDCD30600348FC6 /* MainViewController.swift in Sources */,
 				CEE1F5631DF13E5A00D733AD /* ModalHeaderView.swift in Sources */,
 				CE5F21DB1E4A93A500C47B8E /* LoginTransitionDelegate.swift in Sources */,
 				CEE659E91F664C73001FF29D /* WelcomeViewController.swift in Sources */,
@@ -5284,6 +5297,7 @@
 				CEEC70901E95D5C100EF788E /* PushNotificationsViewController.swift in Sources */,
 				24B8FACA2161632C00A155B1 /* BuyCenterHeaderView.swift in Sources */,
 				24FC816B232239D500892033 /* UIColor+Extension.swift in Sources */,
+				24FC816F2324260100892033 /* TabBarViewController.swift in Sources */,
 				24B8FADF2163C4D400A155B1 /* Currency.swift in Sources */,
 				24B8FAC721615E3D00A155B1 /* BuyCenterTableViewCell.swift in Sources */,
 				222C42501E90492800078EB5 /* BRAPIClient+KV.swift in Sources */,

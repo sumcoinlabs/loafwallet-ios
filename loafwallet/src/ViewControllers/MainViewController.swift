@@ -1,9 +1,9 @@
 //
-//  AccountViewController.swift
-//  breadwallet
+//  MainViewController.swift
+//  loafwallet
 //
-//  Created by Adrian Corscadden on 2016-11-16.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Created by Kerry Washington on 9/5/19.
+//  Copyright © 2019 Litecoin Foundation. All rights reserved.
 //
 
 import UIKit
@@ -13,19 +13,8 @@ import MachO
 let accountHeaderHeight: CGFloat = 136.0
 private let transactionsLoadingViewHeightConstant: CGFloat = 48.0
 
-class AccountViewController : UIViewController, Subscriber {
-
-//    //MARK: - Public
-//    var sendCallback: (() -> Void)? {
-//        didSet { footerView.sendCallback = sendCallback }
-//    }
-//    var receiveCallback: (() -> Void)? {
-//        didSet { footerView.receiveCallback = receiveCallback }
-//    }
-//    var menuCallback: (() -> Void)? {
-//        didSet { footerView.menuCallback = menuCallback }
-//    }
-
+class MainViewController : UIViewController, Subscriber {
+    
     var walletManager: WalletManager? {
         didSet {
             guard let walletManager = walletManager else { return }
@@ -44,7 +33,7 @@ class AccountViewController : UIViewController, Subscriber {
             headerView.isWatchOnly = walletManager.isWatchOnly
         }
     }
-
+    
     init(store: Store, didSelectTransaction: @escaping ([Transaction], Int) -> Void) {
         self.store = store
         self.transactionsTableView = TransactionsTableViewController(store: store, didSelectTransaction: didSelectTransaction)
@@ -53,7 +42,7 @@ class AccountViewController : UIViewController, Subscriber {
         self.tempLoginView = LoginViewController(store: store, isPresentedForLock: false)
         super.init(nibName: nil, bundle: nil)
     }
-
+    
     //MARK: - Private
     private let store: Store
     private let headerView: AccountHeaderView
@@ -68,7 +57,7 @@ class AccountViewController : UIViewController, Subscriber {
     private let tempLoginView: LoginViewController
     private let loginTransitionDelegate = LoginTransitionDelegate()
     private let welcomeTransitingDelegate = PinTransitioningDelegate()
- 
+    
     private let searchHeaderview: SearchHeaderView = {
         let view = SearchHeaderView()
         view.isHidden = true
@@ -86,10 +75,10 @@ class AccountViewController : UIViewController, Subscriber {
         }
     }
     private var didEndLoading = false
-
+    
     override func viewDidLoad() {
-      
-
+        
+        
         // detect jailbreak so we can throw up an idiot warning, in viewDidLoad so it can't easily be swizzled out
         if !E.isSimulator {
             var s = stat()
@@ -106,71 +95,72 @@ class AccountViewController : UIViewController, Subscriber {
             }
             showJailbreakWarnings(isJailbroken: isJailbroken)
         }
-
+        
         NotificationCenter.default.addObserver(forName: UserDefaults.didChangeNotification, object: nil, queue: nil) { _ in
             if UserDefaults.writePaperPhraseDate != nil {
                 self.footerView.refreshButtonStatus()
             }
         }
-      
-      
-      
-//        addTransactionsView()
-//        addSubviews()
-//        addConstraints()
-//        addSubscriptions()
+        
+        
+        
+        //        addTransactionsView()
+        //        addSubviews()
+        //        addConstraints()
+        addSubscriptions()
         addAppLifecycleNotificationEvents()
         addTemporaryStartupViews()
         setInitialData()
         addContainerView()
     }
-  
-    func addContainerView() { 
-      if let vc = UIStoryboard.init(name: "Account", bundle: nil).instantiateViewController(withIdentifier: "MainTabBarController") as? MainTabBarController {
-        addChildViewController(vc) {
-          vc.view.constrain(toSuperviewEdges: nil)
-        }
-      }
-       
     
+    func addContainerView() {
+        
+        
+        if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
+            addChildViewController(vc, layout:{
+                vc.view.constrain(toSuperviewEdges: nil)
+                
+            })
+        } else {
+            print("No Main Tab")
+        }
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         shouldShowStatusBar = true
-      
-
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-  
+    
     private func addSubviews() {
         view.addSubview(headerContainer)
         headerContainer.addSubview(headerView)
         view.addSubview(footerView)
         headerContainer.addSubview(searchHeaderview)
     }
-
+    
     private func addConstraints() {
         headerContainer.constrainTopCorners(sidePadding: 0, topPadding: 0)
         headerContainer.constrain([ headerContainer.constraint(.height, constant: E.isIPhoneX ? accountHeaderHeight + 14.0 : accountHeaderHeight) ])
         headerView.constrain(toSuperviewEdges: nil)
-
+        
         footerView.constrainBottomCorners(sidePadding: 0, bottomPadding: 0)
         footerView.constrain([
             footerView.constraint(.height, constant: E.isIPhoneX ? footerHeight + 19.0 : footerHeight) ])
         searchHeaderview.constrain(toSuperviewEdges: nil)
     }
-
+    
     private func addSubscriptions() {
         store.subscribe(self, selector: { $0.walletState.syncProgress != $1.walletState.syncProgress },
                         callback: { state in
                             self.transactionsTableView.syncingView.progress = CGFloat(state.walletState.syncProgress)
                             self.transactionsTableView.syncingView.timestamp = state.walletState.lastBlockTimestamp
         })
-
+        
         store.lazySubscribe(self, selector: { $0.walletState.syncState != $1.walletState.syncState },
                             callback: { state in
                                 guard let peerManager = self.walletManager?.peerManager else { return }
@@ -182,7 +172,7 @@ class AccountViewController : UIViewController, Subscriber {
                                     self.transactionsTableView.isSyncingViewVisible = false
                                 }
         })
-
+        
         store.subscribe(self, selector: { $0.isLoadingTransactions != $1.isLoadingTransactions }, callback: {
             if $0.isLoadingTransactions {
                 self.loadingDidStart()
@@ -198,7 +188,7 @@ class AccountViewController : UIViewController, Subscriber {
             self.shouldShowStatusBar = false
         })
     }
-
+    
     private func setInitialData() {
         headerView.search.tap = { [weak self] in
             guard let myself = self else { return }
@@ -211,7 +201,7 @@ class AccountViewController : UIViewController, Subscriber {
                                 myself.setNeedsStatusBarAppearanceUpdate()
             })
         }
-
+        
         searchHeaderview.didCancel = { [weak self] in
             guard let myself = self else { return }
             UIView.transition(from: myself.searchHeaderview,
@@ -222,12 +212,12 @@ class AccountViewController : UIViewController, Subscriber {
                                 myself.setNeedsStatusBarAppearanceUpdate()
             })
         }
-
+        
         searchHeaderview.didChangeFilters = { [weak self] filters in
             self?.transactionsTableView.filters = filters
         }
     }
-
+    
     private func loadingDidStart() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             if !self.didEndLoading {
@@ -235,7 +225,7 @@ class AccountViewController : UIViewController, Subscriber {
             }
         })
     }
-
+    
     private func showLoadingView() {
         view.insertSubview(transactionsLoadingView, belowSubview: headerContainer)
         transactionsLoadingViewTop = transactionsLoadingView.topAnchor.constraint(equalTo: headerContainer.bottomAnchor, constant: -transactionsLoadingViewHeightConstant)
@@ -247,7 +237,7 @@ class AccountViewController : UIViewController, Subscriber {
         transactionsLoadingView.progress = 0.01
         view.layoutIfNeeded()
         UIView.animate(withDuration: C.animationDuration, animations: {
-        self.transactionsTableView.tableView.verticallyOffsetContent(transactionsLoadingViewHeightConstant)
+            self.transactionsTableView.tableView.verticallyOffsetContent(transactionsLoadingViewHeightConstant)
             self.transactionsLoadingViewTop?.constant = 0.0
             self.view.layoutIfNeeded()
         }) { completed in
@@ -256,7 +246,7 @@ class AccountViewController : UIViewController, Subscriber {
         }
         loadingTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateLoadingProgress), userInfo: nil, repeats: true)
     }
-
+    
     private func hideLoadingView() {
         didEndLoading = true
         guard self.transactionsLoadingViewTop?.constant == 0.0 else { return } //Should skip hide if it's not shown
@@ -274,11 +264,11 @@ class AccountViewController : UIViewController, Subscriber {
             }
         }
     }
-
+    
     @objc private func updateLoadingProgress() {
         transactionsLoadingView.progress = transactionsLoadingView.progress + (1.0 - transactionsLoadingView.progress)/8.0
     }
-
+    
     private func addTemporaryStartupViews() {
         guardProtected(queue: DispatchQueue.main) {
             if !WalletManager.staticNoWallet {
@@ -297,7 +287,7 @@ class AccountViewController : UIViewController, Subscriber {
             }
         }
     }
-
+    
     private func addTransactionsView() {
         addChildViewController(transactionsTableView, layout: {
             transactionsTableView.view.constrain(toSuperviewEdges: nil)
@@ -321,7 +311,7 @@ class AccountViewController : UIViewController, Subscriber {
                              right: 0)
         })
     }
-
+    
     private func addAppLifecycleNotificationEvents() {
         NotificationCenter.default.addObserver(forName: .UIApplicationDidBecomeActive, object: nil, queue: nil) { note in
             UIView.animate(withDuration: 0.1, animations: {
@@ -338,7 +328,7 @@ class AccountViewController : UIViewController, Subscriber {
             }
         }
     }
-
+    
     private func showJailbreakWarnings(isJailbroken: Bool) {
         guard isJailbroken else { return }
         let totalSent = walletManager?.wallet?.totalSent ?? 0
@@ -354,7 +344,7 @@ class AccountViewController : UIViewController, Subscriber {
         }
         present(alert, animated: true, completion: nil)
     }
-
+    
     private func attemptShowWelcomeView() {
         if !UserDefaults.hasShownWelcome {
             let welcome = WelcomeViewController()
@@ -366,19 +356,19 @@ class AccountViewController : UIViewController, Subscriber {
             UserDefaults.hasShownWelcome = true
         }
     }
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return searchHeaderview.isHidden ? .lightContent : .default
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         return !shouldShowStatusBar
     }
-
+    
     override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         return .slide
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
