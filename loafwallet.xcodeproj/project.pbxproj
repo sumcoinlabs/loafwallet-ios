@@ -338,8 +338,6 @@
 		24D91D0E2166A5480077A619 /* TestnetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0D2166A5480077A619 /* TestnetData.swift */; };
 		24F4887A23215622000FEDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Main.storyboard */; };
 		24F4887B23215622000FEDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Main.storyboard */; };
-		24FC8141232234D700892033 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8140232234D700892033 /* CardViewController.swift */; };
-		24FC8142232234D700892033 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8140232234D700892033 /* CardViewController.swift */; };
 		24FC8144232234F000892033 /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8143232234F000892033 /* SpendViewController.swift */; };
 		24FC8145232234F000892033 /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8143232234F000892033 /* SpendViewController.swift */; };
 		24FC81472322350500892033 /* ReceiveLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81462322350500892033 /* ReceiveLTCViewController.swift */; };
@@ -354,8 +352,8 @@
 		24FC8154232236CD00892033 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8152232236CD00892033 /* Buy.storyboard */; };
 		24FC8156232236DF00892033 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8155232236DF00892033 /* Transactions.storyboard */; };
 		24FC8157232236DF00892033 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8155232236DF00892033 /* Transactions.storyboard */; };
-		24FC8159232236F400892033 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8158232236F400892033 /* Card.storyboard */; };
-		24FC815A232236F400892033 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8158232236F400892033 /* Card.storyboard */; };
+		24FC8159232236F400892033 /* Spend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8158232236F400892033 /* Spend.storyboard */; };
+		24FC815A232236F400892033 /* Spend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC8158232236F400892033 /* Spend.storyboard */; };
 		24FC8163232238B300892033 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8162232238B300892033 /* TransactionsViewController.swift */; };
 		24FC8164232238B300892033 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8162232238B300892033 /* TransactionsViewController.swift */; };
 		24FC81672322394500892033 /* BuyLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81662322394500892033 /* BuyLTCViewController.swift */; };
@@ -364,6 +362,8 @@
 		24FC816B232239D500892033 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8169232239D500892033 /* UIColor+Extension.swift */; };
 		24FC816E2324260100892033 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC816D2324260100892033 /* TabBarViewController.swift */; };
 		24FC816F2324260100892033 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC816D2324260100892033 /* TabBarViewController.swift */; };
+		24FC81722324542700892033 /* LFLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81712324542700892033 /* LFLog.swift */; };
+		24FC81732324542700892033 /* LFLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81712324542700892033 /* LFLog.swift */; };
 		3BD166DFD921B18812C1591C /* Pods_loafwallet_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A779C1CC307134C60649CC2 /* Pods_loafwallet_dev.framework */; };
 		7503773D1DF57428005EB8AE /* WalletManager+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503773C1DF57428005EB8AE /* WalletManager+Auth.swift */; };
 		751734B91DAC941E00193C87 /* sec-sub-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD8BE1DAA16820075898E /* sec-sub-1.c */; };
@@ -1155,7 +1155,6 @@
 		24D91D0A2166923E0077A619 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		24D91D0D2166A5480077A619 /* TestnetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestnetData.swift; sourceTree = "<group>"; };
 		24F4887923215622000FEDC1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		24FC8140232234D700892033 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		24FC8143232234F000892033 /* SpendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewController.swift; sourceTree = "<group>"; };
 		24FC81462322350500892033 /* ReceiveLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveLTCViewController.swift; sourceTree = "<group>"; };
 		24FC81492322351600892033 /* SendLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLTCViewController.swift; sourceTree = "<group>"; };
@@ -1163,11 +1162,12 @@
 		24FC814F232236C000892033 /* Receive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Receive.storyboard; sourceTree = "<group>"; };
 		24FC8152232236CD00892033 /* Buy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Buy.storyboard; sourceTree = "<group>"; };
 		24FC8155232236DF00892033 /* Transactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
-		24FC8158232236F400892033 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		24FC8158232236F400892033 /* Spend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Spend.storyboard; sourceTree = "<group>"; };
 		24FC8162232238B300892033 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		24FC81662322394500892033 /* BuyLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyLTCViewController.swift; sourceTree = "<group>"; };
 		24FC8169232239D500892033 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		24FC816D2324260100892033 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		24FC81712324542700892033 /* LFLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFLog.swift; sourceTree = "<group>"; };
 		3BC8557E3049BD3648E832EA /* Pods-loafwallet-dev.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet-dev.testflight.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet-dev/Pods-loafwallet-dev.testflight.xcconfig"; sourceTree = "<group>"; };
 		40A0FB1403D5D476D1CF3AD8 /* Pods-loafwallet-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet-dev/Pods-loafwallet-dev.release.xcconfig"; sourceTree = "<group>"; };
 		4B486D38F519A3F84855782E /* Pods-loafwallet.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet.testnet.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet/Pods-loafwallet.testnet.xcconfig"; sourceTree = "<group>"; };
@@ -2545,7 +2545,7 @@
 				24FC814F232236C000892033 /* Receive.storyboard */,
 				24FC8152232236CD00892033 /* Buy.storyboard */,
 				24FC8155232236DF00892033 /* Transactions.storyboard */,
-				24FC8158232236F400892033 /* Card.storyboard */,
+				24FC8158232236F400892033 /* Spend.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -2618,14 +2618,6 @@
 			name = Spend;
 			sourceTree = "<group>";
 		};
-		24FC813F232234AE00892033 /* Card */ = {
-			isa = PBXGroup;
-			children = (
-				24FC8140232234D700892033 /* CardViewController.swift */,
-			);
-			name = Card;
-			sourceTree = "<group>";
-		};
 		24FC815B2322383D00892033 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
@@ -2648,6 +2640,14 @@
 				24FC816D2324260100892033 /* TabBarViewController.swift */,
 			);
 			name = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		24FC81702324540400892033 /* LF */ = {
+			isa = PBXGroup;
+			children = (
+				24FC81712324542700892033 /* LFLog.swift */,
+			);
+			name = LF;
 			sourceTree = "<group>";
 		};
 		53710BD444CAD3FF0E91537C /* Pods */ = {
@@ -3622,7 +3622,6 @@
 				24FC816C232425EC00892033 /* Tab Bar */,
 				24FC81652322392A00892033 /* Buy */,
 				24FC815B2322383D00892033 /* Transactions */,
-				24FC813F232234AE00892033 /* Card */,
 				24FC813E232234A500892033 /* Spend */,
 				24FC813D2322349B00892033 /* Receive */,
 				24FC813C2322349400892033 /* Send */,
@@ -3822,6 +3821,7 @@
 		CE6D0E5A1E14BF8400137DF1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				24FC81702324540400892033 /* LF */,
 				CE20C8FF1DBBFFDD00C8397A /* SimpleRedux */,
 				CE6D0E5B1E14BFA600137DF1 /* KeyboardNotificationInfo.swift */,
 				CEE65DEF1E39056F0002994D /* Rate.swift */,
@@ -4501,7 +4501,7 @@
 				1B86CEA42091528B00BCE82E /* Localizable.strings in Resources */,
 				24B8FADD2162D29100A155B1 /* general.css in Resources */,
 				1B86CEA62091528B00BCE82E /* CircularPro-Medium.otf in Resources */,
-				24FC8159232236F400892033 /* Card.storyboard in Resources */,
+				24FC8159232236F400892033 /* Spend.storyboard in Resources */,
 				1B86CEA72091528B00BCE82E /* CircularPro-Bold.otf in Resources */,
 				1B86CEA92091528B00BCE82E /* Assets.xcassets in Resources */,
 				243F2814231FA264008D577A /* GoogleService-Info.plist in Resources */,
@@ -4567,7 +4567,7 @@
 				CE29901A1EFD6DE50093A0F2 /* Localizable.strings in Resources */,
 				24B8FADC2162D29100A155B1 /* general.css in Resources */,
 				CEAA9EA41DC2FC700066731D /* CircularPro-Medium.otf in Resources */,
-				24FC815A232236F400892033 /* Card.storyboard in Resources */,
+				24FC815A232236F400892033 /* Spend.storyboard in Resources */,
 				CEAA9E9E1DC2F90C0066731D /* CircularPro-Bold.otf in Resources */,
 				75A2A79B1DA5934300A983D8 /* Assets.xcassets in Resources */,
 				243F2815231FA264008D577A /* GoogleService-Info.plist in Resources */,
@@ -4828,6 +4828,7 @@
 				24FC814A2322351600892033 /* SendLTCViewController.swift in Sources */,
 				1B86CDD22091528B00BCE82E /* WalletInfo.swift in Sources */,
 				1B86CDD32091528B00BCE82E /* TransactionDetailCollectionViewCell.swift in Sources */,
+				24FC81722324542700892033 /* LFLog.swift in Sources */,
 				1B86CDD42091528B00BCE82E /* RetryTimer.swift in Sources */,
 				1B86CDD52091528B00BCE82E /* ScanViewController.swift in Sources */,
 				1B86CDD62091528B00BCE82E /* UIViewController+BRWAdditions.swift in Sources */,
@@ -4936,7 +4937,6 @@
 				1B86CE352091528B00BCE82E /* CheckView.swift in Sources */,
 				1B86CE362091528B00BCE82E /* PinPadViewController.swift in Sources */,
 				1B86CE372091528B00BCE82E /* UISlider+Gradient.swift in Sources */,
-				24FC8141232234D700892033 /* CardViewController.swift in Sources */,
 				1B86CE382091528B00BCE82E /* MenuButtonType.swift in Sources */,
 				24FC816E2324260100892033 /* TabBarViewController.swift in Sources */,
 				1B86CE392091528B00BCE82E /* BRActivityView.swift in Sources */,
@@ -5188,7 +5188,6 @@
 				754AE0BC1DFE8A46007FD001 /* BRCore.swift in Sources */,
 				22A9A94A1DF61945000F0016 /* BRCameraPlugin.swift in Sources */,
 				CEC6AA3B1DEE4EB000EE5AFD /* CGRect+Additions.swift in Sources */,
-				24FC8142232234D700892033 /* CardViewController.swift in Sources */,
 				CE45C1FB1E74F89C002C3847 /* WalletInfo.swift in Sources */,
 				CE14E40B1E4D881500AEA83A /* TransactionDetailCollectionViewCell.swift in Sources */,
 				CEE659E71F65A936001FF29D /* RetryTimer.swift in Sources */,
@@ -5270,6 +5269,7 @@
 				CEBF32EE1DDBC30000348FC6 /* ShadowButton.swift in Sources */,
 				CEB909F71E5FE654001804DC /* EnterPhraseCollectionViewController.swift in Sources */,
 				CEF3D2DD1E8CBA790070178E /* LAContext+Extensions.swift in Sources */,
+				24FC81732324542700892033 /* LFLog.swift in Sources */,
 				CECCE5AE1E04AD6300D99448 /* AddressCell.swift in Sources */,
 				CE6BCF5D1EE9E89A0029849C /* CustomTitleView.swift in Sources */,
 				CE2DC1391EBC36EE000FE727 /* Prompt.swift in Sources */,

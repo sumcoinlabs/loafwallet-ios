@@ -10,20 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Transactions View Controller-->
-        <scene sceneID="9uR-VG-jkV">
+        <!--Spend View Controller-->
+        <scene sceneID="ovc-Lp-HQd">
             <objects>
-                <viewController storyboardIdentifier="TransactionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XfV-N2-tFK" customClass="TransactionsViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xwt-ht-S8L" customClass="TransactionDetailCollectionViewCell" customModule="loafwallet" customModuleProvider="target">
+                <viewController storyboardIdentifier="SpendViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wNG-O7-NAJ" customClass="SpendViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uhd-8R-UA7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="3Hf-wo-eJG"/>
+                        <viewLayoutGuide key="safeArea" id="6Re-5z-gdu"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ys4-D2-Gea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZa-tg-HdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="512" y="-41"/>
+            <point key="canvasLocation" x="-14" y="192"/>
         </scene>
     </scenes>
 </document>
