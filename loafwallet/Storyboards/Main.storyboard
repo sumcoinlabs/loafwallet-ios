@@ -10,22 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Send-->
-        <scene sceneID="LGr-9I-XGH">
-            <objects>
-                <viewController id="BUN-f5-bpC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Wfo-GX-nxH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="laX-UA-FZK"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Send" image="SendButtonIcon" id="aK6-Iu-Rv4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bqk-U3-6TT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1848" y="615"/>
-        </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="pYK-Md-o1Y">
             <objects>
@@ -35,15 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opR-qd-DmI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="735"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="720"/>
                                 <color key="backgroundColor" red="0.089909873900000006" green="0.6183931828" blue="0.15337970849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3Z-Gw-zod">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <rect key="frame" x="0.0" y="764" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="qwA-9l-CfE"/>
-                                    <tabBarItem systemItem="more" id="Idu-CT-kfl"/>
+                                    <tabBarItem systemItem="favorites" id="qwA-9l-CfE" userLabel="Account"/>
+                                    <tabBarItem systemItem="more" id="Idu-CT-kfl" userLabel="Send"/>
+                                    <tabBarItem title="Item" id="spP-38-fzY" userLabel="Buy"/>
+                                    <tabBarItem title="Item" id="1Ar-eJ-M87" userLabel="Receive"/>
+                                    <tabBarItem title="Item" id="AqX-pP-5Rd" userLabel="Spend"/>
                                 </items>
                                 <connections>
                                     <outlet property="delegate" destination="x3n-5i-KbR" id="9hM-1p-ODS"/>
@@ -62,6 +49,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hBW-LI-2Ec"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="containerView" destination="opR-qd-DmI" id="K7e-hl-g8G"/>
                         <outlet property="tabBar" destination="j3Z-Gw-zod" id="PpH-h0-AQX"/>
@@ -71,25 +59,5 @@
             </objects>
             <point key="canvasLocation" x="-3967" y="271"/>
         </scene>
-        <!--Account-->
-        <scene sceneID="EPO-UY-bS0">
-            <objects>
-                <viewController id="y8f-2r-lPN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dpa-Of-Hyy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="bdj-Hd-98e"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Account" image="flash" id="1zj-YS-1fA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kVA-pC-FSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2488" y="-36"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="SendButtonIcon" width="20" height="24"/>
-        <image name="flash" width="16" height="16"/>
-    </resources>
 </document>
