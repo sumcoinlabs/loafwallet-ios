@@ -27,10 +27,10 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem systemItem="favorites" id="qwA-9l-CfE" userLabel="Account"/>
-                                    <tabBarItem systemItem="more" id="Idu-CT-kfl" userLabel="Send"/>
-                                    <tabBarItem title="Item" id="spP-38-fzY" userLabel="Buy"/>
-                                    <tabBarItem title="Item" id="1Ar-eJ-M87" userLabel="Receive"/>
-                                    <tabBarItem title="Item" id="AqX-pP-5Rd" userLabel="Spend"/>
+                                    <tabBarItem tag="1" systemItem="more" id="Idu-CT-kfl" userLabel="Send"/>
+                                    <tabBarItem tag="2" title="Item" id="spP-38-fzY" userLabel="Buy"/>
+                                    <tabBarItem tag="3" title="Item" id="1Ar-eJ-M87" userLabel="Receive"/>
+                                    <tabBarItem tag="4" title="Item" id="AqX-pP-5Rd" userLabel="Spend"/>
                                 </items>
                                 <connections>
                                     <outlet property="delegate" destination="x3n-5i-KbR" id="9hM-1p-ODS"/>

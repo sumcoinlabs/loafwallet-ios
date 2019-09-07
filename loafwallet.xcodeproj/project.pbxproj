@@ -338,8 +338,6 @@
 		24D91D0E2166A5480077A619 /* TestnetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0D2166A5480077A619 /* TestnetData.swift */; };
 		24F4887A23215622000FEDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Main.storyboard */; };
 		24F4887B23215622000FEDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4887923215622000FEDC1 /* Main.storyboard */; };
-		24F4888123222D75000FEDC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4888023222D75000FEDC1 /* MainTabBarController.swift */; };
-		24F4888223222D75000FEDC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4888023222D75000FEDC1 /* MainTabBarController.swift */; };
 		24FC8141232234D700892033 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8140232234D700892033 /* CardViewController.swift */; };
 		24FC8142232234D700892033 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8140232234D700892033 /* CardViewController.swift */; };
 		24FC8144232234F000892033 /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC8143232234F000892033 /* SpendViewController.swift */; };
@@ -1157,7 +1155,6 @@
 		24D91D0A2166923E0077A619 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		24D91D0D2166A5480077A619 /* TestnetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestnetData.swift; sourceTree = "<group>"; };
 		24F4887923215622000FEDC1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		24F4888023222D75000FEDC1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		24FC8140232234D700892033 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		24FC8143232234F000892033 /* SpendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewController.swift; sourceTree = "<group>"; };
 		24FC81462322350500892033 /* ReceiveLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveLTCViewController.swift; sourceTree = "<group>"; };
@@ -2593,7 +2590,6 @@
 			isa = PBXGroup;
 			children = (
 				CEBF32EF1DDCD30600348FC6 /* MainViewController.swift */,
-				24F4888023222D75000FEDC1 /* MainTabBarController.swift */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -4990,7 +4986,6 @@
 				1B86CE642091528B00BCE82E /* Transaction.swift in Sources */,
 				1B86CE652091528B00BCE82E /* UIViewPropertyAnimator+BRWAdditions.swift in Sources */,
 				1B86CE662091528B00BCE82E /* Bonjour.swift in Sources */,
-				24F4888123222D75000FEDC1 /* MainTabBarController.swift in Sources */,
 				1B86CE672091528B00BCE82E /* UIFont+BRWAdditions.swift in Sources */,
 				1B86CE682091528B00BCE82E /* MenuButton.swift in Sources */,
 				1B86CE692091528B00BCE82E /* AmountViewController.swift in Sources */,
@@ -5311,7 +5306,6 @@
 				CE4CA7BC1EE3649100373F11 /* BRActivityView.swift in Sources */,
 				CEC6AA421DEFC88F00EE5AFD /* ReceiveViewController.swift in Sources */,
 				CEE20C2D1EA288FA0086F724 /* UpdatingLabel.swift in Sources */,
-				24F4888223222D75000FEDC1 /* MainTabBarController.swift in Sources */,
 				CE3D4C591EF743EF0016B1C8 /* Functions.swift in Sources */,
 				24FC81482322350500892033 /* ReceiveLTCViewController.swift in Sources */,
 				CEE20C341EA5B4550086F724 /* ArticleIds.swift in Sources */,
