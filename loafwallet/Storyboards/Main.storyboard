@@ -19,31 +19,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opR-qd-DmI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="720"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="620"/>
                                 <color key="backgroundColor" red="0.089909873900000006" green="0.6183931828" blue="0.15337970849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3Z-Gw-zod">
                                 <rect key="frame" x="0.0" y="764" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="qwA-9l-CfE" userLabel="Account"/>
-                                    <tabBarItem tag="1" systemItem="more" id="Idu-CT-kfl" userLabel="Send"/>
-                                    <tabBarItem tag="2" title="Item" id="spP-38-fzY" userLabel="Buy"/>
-                                    <tabBarItem tag="3" title="Item" id="1Ar-eJ-M87" userLabel="Receive"/>
-                                    <tabBarItem tag="4" title="Item" id="AqX-pP-5Rd" userLabel="Spend"/>
+                                    <tabBarItem title="Accont" image="flash" id="qwA-9l-CfE" userLabel="Account"/>
+                                    <tabBarItem tag="1" title="Send" image="SendButtonIcon" id="Idu-CT-kfl" userLabel="Send"/>
+                                    <tabBarItem tag="2" title="Buy" image="litecoin_cutout24" id="spP-38-fzY" userLabel="Buy"/>
+                                    <tabBarItem tag="3" title="Receive" image="ReceiveButtonIcon" id="1Ar-eJ-M87" userLabel="Receive"/>
+                                    <tabBarItem tag="4" title="Spend" image="card_icon" id="AqX-pP-5Rd" userLabel="Spend"/>
                                 </items>
                                 <connections>
                                     <outlet property="delegate" destination="x3n-5i-KbR" id="9hM-1p-ODS"/>
                                 </connections>
                             </tabBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHZ-G5-6k8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iBk-qu-OG6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hBW-LI-2Ec" firstAttribute="trailing" secondItem="ZHZ-G5-6k8" secondAttribute="trailing" id="1NP-ep-2dC"/>
                             <constraint firstItem="j3Z-Gw-zod" firstAttribute="top" secondItem="opR-qd-DmI" secondAttribute="bottom" id="8wW-e7-OUx"/>
-                            <constraint firstItem="opR-qd-DmI" firstAttribute="top" secondItem="hBW-LI-2Ec" secondAttribute="top" id="LVD-af-718"/>
                             <constraint firstItem="hBW-LI-2Ec" firstAttribute="bottom" secondItem="j3Z-Gw-zod" secondAttribute="bottom" id="PHV-Tm-yb2"/>
                             <constraint firstItem="opR-qd-DmI" firstAttribute="leading" secondItem="hBW-LI-2Ec" secondAttribute="leading" id="Uks-L9-3r8"/>
                             <constraint firstItem="j3Z-Gw-zod" firstAttribute="trailing" secondItem="hBW-LI-2Ec" secondAttribute="trailing" id="kWh-dE-DaX"/>
+                            <constraint firstItem="ZHZ-G5-6k8" firstAttribute="leading" secondItem="hBW-LI-2Ec" secondAttribute="leading" id="qTh-4T-6Zi"/>
+                            <constraint firstItem="ZHZ-G5-6k8" firstAttribute="top" secondItem="hBW-LI-2Ec" secondAttribute="top" id="rG3-cR-2zs"/>
+                            <constraint firstItem="opR-qd-DmI" firstAttribute="top" secondItem="ZHZ-G5-6k8" secondAttribute="bottom" id="sNz-3F-FxX"/>
                             <constraint firstItem="hBW-LI-2Ec" firstAttribute="trailing" secondItem="opR-qd-DmI" secondAttribute="trailing" id="uc7-vf-vq1"/>
                             <constraint firstItem="j3Z-Gw-zod" firstAttribute="leading" secondItem="hBW-LI-2Ec" secondAttribute="leading" id="xAE-1R-YGs"/>
                         </constraints>
@@ -52,12 +62,20 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="containerView" destination="opR-qd-DmI" id="K7e-hl-g8G"/>
+                        <outlet property="headerView" destination="ZHZ-G5-6k8" id="eca-ki-lm4"/>
                         <outlet property="tabBar" destination="j3Z-Gw-zod" id="PpH-h0-AQX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Bt-6z-wZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3967" y="271"/>
+            <point key="canvasLocation" x="-3968.115942028986" y="270.53571428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ReceiveButtonIcon" width="20" height="24"/>
+        <image name="SendButtonIcon" width="20" height="24"/>
+        <image name="card_icon" width="24" height="24"/>
+        <image name="flash" width="16" height="16"/>
+        <image name="litecoin_cutout24" width="24" height="24"/>
+    </resources>
 </document>
