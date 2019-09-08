@@ -14,11 +14,11 @@
         <scene sceneID="9uR-VG-jkV">
             <objects>
                 <viewController storyboardIdentifier="TransactionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XfV-N2-tFK" customClass="TransactionsViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xwt-ht-S8L" customClass="TransactionDetailCollectionViewCell" customModule="loafwallet" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="jjo-tv-BL1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="3Hf-wo-eJG"/>
+                        <viewLayoutGuide key="safeArea" id="y8a-1z-ofq"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ys4-D2-Gea" userLabel="First Responder" sceneMemberID="firstResponder"/>
