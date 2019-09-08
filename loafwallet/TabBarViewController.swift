@@ -24,8 +24,7 @@ class TabBarViewController: UIViewController, UITabBarDelegate {
         super.viewDidLoad()
         
         for (index, storyboardID) in self.storyboardIDs.enumerated() {
-            print(storyboardNames[index])
-            print(storyboardID)
+            
              let controller = UIStoryboard.init(name: storyboardNames[index], bundle: nil).instantiateViewController(withIdentifier: storyboardID)
              
             viewControllers.append(controller)

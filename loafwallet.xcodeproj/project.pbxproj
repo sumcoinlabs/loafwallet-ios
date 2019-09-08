@@ -364,6 +364,8 @@
 		24FC816F2324260100892033 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC816D2324260100892033 /* TabBarViewController.swift */; };
 		24FC81722324542700892033 /* LFLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81712324542700892033 /* LFLog.swift */; };
 		24FC81732324542700892033 /* LFLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81712324542700892033 /* LFLog.swift */; };
+		24FC81752324C68200892033 /* HeaderViewv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81742324C68200892033 /* HeaderViewv2.swift */; };
+		24FC81762324C68200892033 /* HeaderViewv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC81742324C68200892033 /* HeaderViewv2.swift */; };
 		3BD166DFD921B18812C1591C /* Pods_loafwallet_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A779C1CC307134C60649CC2 /* Pods_loafwallet_dev.framework */; };
 		7503773D1DF57428005EB8AE /* WalletManager+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503773C1DF57428005EB8AE /* WalletManager+Auth.swift */; };
 		751734B91DAC941E00193C87 /* sec-sub-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD8BE1DAA16820075898E /* sec-sub-1.c */; };
@@ -1168,6 +1170,7 @@
 		24FC8169232239D500892033 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		24FC816D2324260100892033 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		24FC81712324542700892033 /* LFLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFLog.swift; sourceTree = "<group>"; };
+		24FC81742324C68200892033 /* HeaderViewv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewv2.swift; sourceTree = "<group>"; };
 		3BC8557E3049BD3648E832EA /* Pods-loafwallet-dev.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet-dev.testflight.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet-dev/Pods-loafwallet-dev.testflight.xcconfig"; sourceTree = "<group>"; };
 		40A0FB1403D5D476D1CF3AD8 /* Pods-loafwallet-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet-dev/Pods-loafwallet-dev.release.xcconfig"; sourceTree = "<group>"; };
 		4B486D38F519A3F84855782E /* Pods-loafwallet.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet.testnet.xcconfig"; path = "Pods/Target Support Files/Pods-loafwallet/Pods-loafwallet.testnet.xcconfig"; sourceTree = "<group>"; };
@@ -3770,6 +3773,7 @@
 				CE2DC1381EBC36EE000FE727 /* Prompt.swift */,
 				CE4C1CC51ED65D830063E184 /* DrawableCircle.swift */,
 				CEBF292D1EF99E55005C330A /* LightWeightAlert.swift */,
+				24FC81742324C68200892033 /* HeaderViewv2.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -5025,6 +5029,7 @@
 				1B86CE8A2091528B00BCE82E /* AccountFooterView.swift in Sources */,
 				1B86CE8B2091528B00BCE82E /* String+Additions.swift in Sources */,
 				1B86CE8C2091528B00BCE82E /* InAppAlert.swift in Sources */,
+				24FC81752324C68200892033 /* HeaderViewv2.swift in Sources */,
 				24FC8163232238B300892033 /* TransactionsViewController.swift in Sources */,
 				1B86CE8D2091528B00BCE82E /* UIScreen+Additions.swift in Sources */,
 				1B86CE8E2091528B00BCE82E /* MaskedShadow.swift in Sources */,
@@ -5221,6 +5226,7 @@
 				1B3F74231FFB106200CCA50C /* BiometricsSettingsViewController.swift in Sources */,
 				CEC4CF071F0C48DD00E5C82E /* StartWipeWalletViewController.swift in Sources */,
 				7528D2981ECF655500925DBC /* PaymentProtocol.swift in Sources */,
+				24FC81762324C68200892033 /* HeaderViewv2.swift in Sources */,
 				22A9A9491DF61945000F0016 /* BRBSPatch.swift in Sources */,
 				24A6DCFC2230BD9000505F44 /* WipeEmptyWalletViewController.swift in Sources */,
 				CE92F9F61DEDF6890046B516 /* UIViewControllerContextTransitioning+BRAdditions.swift in Sources */,

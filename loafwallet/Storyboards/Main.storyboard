@@ -47,12 +47,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hBW-LI-2Ec" firstAttribute="trailing" secondItem="ZHZ-G5-6k8" secondAttribute="trailing" id="1NP-ep-2dC"/>
+                            <constraint firstItem="ZHZ-G5-6k8" firstAttribute="top" secondItem="hBW-LI-2Ec" secondAttribute="top" id="3Md-Ke-jFm"/>
                             <constraint firstItem="j3Z-Gw-zod" firstAttribute="top" secondItem="opR-qd-DmI" secondAttribute="bottom" id="8wW-e7-OUx"/>
                             <constraint firstItem="hBW-LI-2Ec" firstAttribute="bottom" secondItem="j3Z-Gw-zod" secondAttribute="bottom" id="PHV-Tm-yb2"/>
                             <constraint firstItem="opR-qd-DmI" firstAttribute="leading" secondItem="hBW-LI-2Ec" secondAttribute="leading" id="Uks-L9-3r8"/>
                             <constraint firstItem="j3Z-Gw-zod" firstAttribute="trailing" secondItem="hBW-LI-2Ec" secondAttribute="trailing" id="kWh-dE-DaX"/>
                             <constraint firstItem="ZHZ-G5-6k8" firstAttribute="leading" secondItem="hBW-LI-2Ec" secondAttribute="leading" id="qTh-4T-6Zi"/>
-                            <constraint firstItem="ZHZ-G5-6k8" firstAttribute="top" secondItem="hBW-LI-2Ec" secondAttribute="top" id="rG3-cR-2zs"/>
                             <constraint firstItem="opR-qd-DmI" firstAttribute="top" secondItem="ZHZ-G5-6k8" secondAttribute="bottom" id="sNz-3F-FxX"/>
                             <constraint firstItem="hBW-LI-2Ec" firstAttribute="trailing" secondItem="opR-qd-DmI" secondAttribute="trailing" id="uc7-vf-vq1"/>
                             <constraint firstItem="j3Z-Gw-zod" firstAttribute="leading" secondItem="hBW-LI-2Ec" secondAttribute="leading" id="xAE-1R-YGs"/>
