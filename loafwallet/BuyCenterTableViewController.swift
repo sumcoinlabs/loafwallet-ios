@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Crashlytics
 
 let buyCellReuseIdentifier = "buyCell"
 
@@ -86,7 +85,6 @@ class BuyCenterTableViewController: UITableViewController, BuyCenterTableViewCel
     switch partner {
       case "Simplex":
         let simplexWebviewVC = BRWebViewController(partner: "Simplex", mountPoint: mountPoint + "_simplex", walletManager: walletManager, store: store, noAuthApiClient: nil)
-        registerLogEvent(name:"OPEN_SIMPLEX_STORE")
         present(simplexWebviewVC, animated: true
         , completion: nil)
       case "Changelly":
@@ -108,11 +106,7 @@ class BuyCenterTableViewController: UITableViewController, BuyCenterTableViewCel
   @objc func dismissWebContainer() {
     dismiss(animated: true, completion: nil)
   }
-  
-  func registerLogEvent(name:String) {
-         Answers.logCustomEvent(withName: name, customAttributes: ["deviceID":UIDevice.current.identifierForVendor?.uuidString ?? "NODEVICEID"])
-  }
-  
+    
 }
 
 

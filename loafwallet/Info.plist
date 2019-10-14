@@ -85,6 +85,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
+<<<<<<< HEAD
 	<string>2</string>
 	<key>Fabric</key>
 	<dict>
@@ -100,6 +101,9 @@
 			</dict>
 		</array>
 	</dict>
+=======
+	<string>42</string>
+>>>>>>> b3a3c36... removed fastlane and Crashlytics
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationCategoryType</key>
