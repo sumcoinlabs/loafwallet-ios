@@ -115,6 +115,7 @@ class WalletCoordinator : Subscriber, Trackable {
         backgroundTaskId = UIApplication.shared.beginBackgroundTask(expirationHandler: {
             DispatchQueue.walletQueue.async {
                 self.walletManager.peerManager?.disconnect()
+                self.endBackgroundTask()
             }
         })
     }
