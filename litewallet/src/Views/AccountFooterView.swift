@@ -29,34 +29,34 @@ class AccountFooterView: UIView {
 
     func setupSubViews(){
 
-        let backgroundView = UITabBar()
-        addSubview(backgroundView)
-        backgroundView.constrain(toSuperviewEdges: nil)
+            let backgroundView = UITabBar()
+            self.addSubview(backgroundView)
+            backgroundView.constrain(toSuperviewEdges: nil)
 
-        let send = UIButton.vertical(title: S.Button.send.uppercased(), image: #imageLiteral(resourceName: "SendButtonIcon"))
-        send.tintColor = .grayTextTint
-        send.addTarget(self, action: #selector(AccountFooterView.send), for: .touchUpInside)
+            let send = UIButton.vertical(title: S.Button.send.uppercased(), image: #imageLiteral(resourceName: "SendButtonIcon"))
+            send.tintColor = .grayTextTint
+            send.addTarget(self, action: #selector(AccountFooterView.send), for: .touchUpInside)
 
-        let receive = UIButton.vertical(title: S.Button.receive.uppercased(), image: #imageLiteral(resourceName: "ReceiveButtonIcon"))
-        receive.tintColor = .grayTextTint
-        receive.addTarget(self, action: #selector(AccountFooterView.receive), for: .touchUpInside)
-      
-        let buy = UIButton.vertical(title: S.Button.buy.uppercased(), image: #imageLiteral(resourceName: "BuyIcon"))
-        buy.tintColor = .grayTextTint
-        buy.addTarget(self, action: #selector(AccountFooterView.buy), for: .touchUpInside)
-      
-        let menu = UIButton.vertical(title: S.Button.menu.uppercased(), image: #imageLiteral(resourceName: "MenuButtonIcon"))
-        menu.tintColor = .grayTextTint
-        menu.addTarget(self, action: #selector(AccountFooterView.menu), for: .touchUpInside)
+            let receive = UIButton.vertical(title: S.Button.receive.uppercased(), image: #imageLiteral(resourceName: "ReceiveButtonIcon"))
+            receive.tintColor = .grayTextTint
+            receive.addTarget(self, action: #selector(AccountFooterView.receive), for: .touchUpInside)
+          
+            let buy = UIButton.vertical(title: S.Button.buy.uppercased(), image: #imageLiteral(resourceName: "BuyIcon"))
+            buy.tintColor = .grayTextTint
+            buy.addTarget(self, action: #selector(AccountFooterView.buy), for: .touchUpInside)
+          
+            let menu = UIButton.vertical(title: S.Button.menu.uppercased(), image: #imageLiteral(resourceName: "MenuButtonIcon"))
+            menu.tintColor = .grayTextTint
+            menu.addTarget(self, action: #selector(AccountFooterView.menu), for: .touchUpInside)
 
-        if E.isScreenshots {
-            menu.accessibilityLabel = "MENU"
-        }
+            if E.isScreenshots {
+                menu.accessibilityLabel = "MENU"
+            }
 
-        addSubview(send)
-        addSubview(receive)
-        addSubview(buy)
-        addSubview(menu)
+            self.addSubview(send)
+            self.addSubview(receive)
+            self.addSubview(buy)
+            self.addSubview(menu)
         
         send.isEnabled = checkPaperKeyStatus()
         receive.isEnabled = checkPaperKeyStatus()

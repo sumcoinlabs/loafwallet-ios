@@ -181,7 +181,7 @@ class ModalPresenter : Subscriber, Trackable {
 
 //    private func presentFaq(articleId: String? = nil) {
 //        guard let supportCenter = supportCenter else { return }
-//        supportCenter.modalPresentationStyle = .overFullScreen
+//        supportCenter.modalPresentationStyle = .fullScreen
 //        supportCenter.modalPresentationCapturesStatusBarAppearance = true
 //        supportCenter.transitioningDelegate = supportCenter
 //        let url = articleId == nil ? "/support" : "/support?id=\(articleId!)"
@@ -790,7 +790,7 @@ class ModalPresenter : Subscriber, Trackable {
         })
         verify.didCancel = { callback(.cancelled) }
         verify.transitioningDelegate = verifyPinTransitionDelegate
-        verify.modalPresentationStyle = .overFullScreen
+        verify.modalPresentationStyle = .fullScreen
         verify.modalPresentationCapturesStatusBarAppearance = true
         topViewController?.present(verify, animated: true, completion: nil)
     }

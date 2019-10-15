@@ -350,6 +350,8 @@
 		24D91D0B2166923E0077A619 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91D0A2166923E0077A619 /* UserNotifications.framework */; };
 		24D91D0C216692450077A619 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91D0A2166923E0077A619 /* UserNotifications.framework */; };
 		24D91D0E2166A5480077A619 /* TestnetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0D2166A5480077A619 /* TestnetData.swift */; };
+		37E9569F9BABBCF71E212E09 /* Pods_litewallet_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5BB07986D17E1517C6AB35 /* Pods_litewallet_dev.framework */; };
+		3E32B2E8D8F22E151BB383D6 /* Pods_litewallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516E0E5C9B2396873BA39DCC /* Pods_litewallet.framework */; };
 		7503773D1DF57428005EB8AE /* WalletManager+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503773C1DF57428005EB8AE /* WalletManager+Auth.swift */; };
 		751734B91DAC941E00193C87 /* sec-sub-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD8BE1DAA16820075898E /* sec-sub-1.c */; };
 		752438751DAAC50800844BEC /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD6761DAA0E400075898E /* alloc.c */; };
@@ -500,6 +502,7 @@
 		75A2A81F1DA5938500A983D8 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A81E1DA5938500A983D8 /* NotificationService.swift */; };
 		75A2A8231DA5938500A983D8 /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75A2A81C1DA5938500A983D8 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		75C735AA1DAA1B9C00251ECF /* libunbound.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD4121DAA0E3E0075898E /* libunbound.c */; };
+		8E695DE7CB62E673CECA5CB1 /* Pods_litewalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E5C1283C51F199DC6164C1 /* Pods_litewalletUITests.framework */; };
 		CE03EC721EF193810038E3A8 /* String+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03EC711EF193800038E3A8 /* String+Keys.swift */; };
 		CE03EC741EF256AC0038E3A8 /* SimpleUTXO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03EC731EF256AC0038E3A8 /* SimpleUTXO.swift */; };
 		CE0CD1591DBFBCF5004023DA /* ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CD1581DBFBCF5004023DA /* ModalPresenter.swift */; };
@@ -692,6 +695,7 @@
 		CEF61B141ED0D10000C7EA6A /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF61B131ED0D10000C7EA6A /* Types.swift */; };
 		CEF61B161ED2056D00C7EA6A /* NumberFormatter+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF61B151ED2056D00C7EA6A /* NumberFormatter+Additions.swift */; };
 		CEFFA2D11EB3BD730085C5D1 /* LoadingIndicator.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFFA2D01EB3BD730085C5D1 /* LoadingIndicator.xcassets */; };
+		EA719F60BA2740A2759FA445 /* Pods_litewalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF21E47AF5E6448647A4C25 /* Pods_litewalletTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -937,6 +941,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D19C945B8C0AF090E0D2BEC /* Pods-litewalletTests.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewalletTests.testnet.xcconfig"; path = "Target Support Files/Pods-litewalletTests/Pods-litewalletTests.testnet.xcconfig"; sourceTree = "<group>"; };
+		1047248DBEC00D9353CFF850 /* Pods-litewallet.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewallet.testflight.xcconfig"; path = "Target Support Files/Pods-litewallet/Pods-litewallet.testflight.xcconfig"; sourceTree = "<group>"; };
 		1B3F74211FFB106200CCA50C /* BiometricsSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiometricsSettingsViewController.swift; path = src/ViewControllers/BiometricsSettingsViewController.swift; sourceTree = "<group>"; };
 		1B3F74221FFB106200CCA50C /* BiometricsSpendingLimitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiometricsSpendingLimitViewController.swift; path = src/ViewControllers/BiometricsSpendingLimitViewController.swift; sourceTree = "<group>"; };
 		1B86CEBA2091528B00BCE82E /* litewallet-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "litewallet-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1144,6 +1150,13 @@
 		24D5F26D225A5BEA00225462 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		24D91D0A2166923E0077A619 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		24D91D0D2166A5480077A619 /* TestnetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestnetData.swift; sourceTree = "<group>"; };
+		26E5C1283C51F199DC6164C1 /* Pods_litewalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_litewalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA92A6C1BD0DB74CB3C28DA /* Pods-litewalletUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewalletUITests.development.xcconfig"; path = "Target Support Files/Pods-litewalletUITests/Pods-litewalletUITests.development.xcconfig"; sourceTree = "<group>"; };
+		3F8585A4C6D80554AA793C91 /* Pods-litewallet.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewallet.testnet.xcconfig"; path = "Target Support Files/Pods-litewallet/Pods-litewallet.testnet.xcconfig"; sourceTree = "<group>"; };
+		516E0E5C9B2396873BA39DCC /* Pods_litewallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_litewallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51831928495B3E09B7B0BA0B /* Pods-litewalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewalletUITests.release.xcconfig"; path = "Target Support Files/Pods-litewalletUITests/Pods-litewalletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53A8972F731BA5EDFBE880CC /* Pods-litewallet-dev.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewallet-dev.testflight.xcconfig"; path = "Target Support Files/Pods-litewallet-dev/Pods-litewallet-dev.testflight.xcconfig"; sourceTree = "<group>"; };
+		72EC4398B50834DBDF08A703 /* Pods-litewalletUITests.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewalletUITests.testflight.xcconfig"; path = "Target Support Files/Pods-litewalletUITests/Pods-litewalletUITests.testflight.xcconfig"; sourceTree = "<group>"; };
 		7503773C1DF57428005EB8AE /* WalletManager+Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WalletManager+Auth.swift"; path = "src/WalletManager+Auth.swift"; sourceTree = "<group>"; };
 		7528D2971ECF655500925DBC /* PaymentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentProtocol.swift; path = src/PaymentProtocol.swift; sourceTree = "<group>"; };
 		752FB03B1DF8BE4B009086FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1805,6 +1818,13 @@
 		75A2A87C1DA59E4E00A983D8 /* litewallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = litewallet.entitlements; sourceTree = "<group>"; };
 		75C735AF1DAA1C9F00251ECF /* libnettle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnettle.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FEFD1B1DAED56E00203D3A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8F02C8CF669A463D1A99116C /* Pods-litewallet.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewallet.development.xcconfig"; path = "Target Support Files/Pods-litewallet/Pods-litewallet.development.xcconfig"; sourceTree = "<group>"; };
+		B1A9427475508081E824F685 /* Pods-litewallet-dev.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewallet-dev.testnet.xcconfig"; path = "Target Support Files/Pods-litewallet-dev/Pods-litewallet-dev.testnet.xcconfig"; sourceTree = "<group>"; };
+		B5825D5E65721ACD98225E85 /* Pods-litewallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewallet.release.xcconfig"; path = "Target Support Files/Pods-litewallet/Pods-litewallet.release.xcconfig"; sourceTree = "<group>"; };
+		B5E41DE64BB9014BA92966CC /* Pods-litewalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewalletTests.release.xcconfig"; path = "Target Support Files/Pods-litewalletTests/Pods-litewalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6ADB2BED42DDF48E669C06C /* Pods-litewalletUITests.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewalletUITests.testnet.xcconfig"; path = "Target Support Files/Pods-litewalletUITests/Pods-litewalletUITests.testnet.xcconfig"; sourceTree = "<group>"; };
+		C3B2E3E6D71602B9C892D133 /* Pods-litewalletTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewalletTests.development.xcconfig"; path = "Target Support Files/Pods-litewalletTests/Pods-litewalletTests.development.xcconfig"; sourceTree = "<group>"; };
+		CC0DF47FE45F91C375D8F0FA /* Pods-litewalletTests.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewalletTests.testflight.xcconfig"; path = "Target Support Files/Pods-litewalletTests/Pods-litewalletTests.testflight.xcconfig"; sourceTree = "<group>"; };
 		CE03EC711EF193800038E3A8 /* String+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Keys.swift"; path = "src/Extensions/String+Keys.swift"; sourceTree = "<group>"; };
 		CE03EC731EF256AC0038E3A8 /* SimpleUTXO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleUTXO.swift; path = src/Models/SimpleUTXO.swift; sourceTree = "<group>"; };
 		CE0CD1581DBFBCF5004023DA /* ModalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = ModalPresenter.swift; path = src/ModalPresenter.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -2018,6 +2038,10 @@
 		CEF61B131ED0D10000C7EA6A /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Types.swift; path = src/Models/Types.swift; sourceTree = "<group>"; };
 		CEF61B151ED2056D00C7EA6A /* NumberFormatter+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NumberFormatter+Additions.swift"; path = "src/Extensions/NumberFormatter+Additions.swift"; sourceTree = "<group>"; };
 		CEFFA2D01EB3BD730085C5D1 /* LoadingIndicator.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoadingIndicator.xcassets; sourceTree = "<group>"; };
+		DB5BB07986D17E1517C6AB35 /* Pods_litewallet_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_litewallet_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF21E47AF5E6448647A4C25 /* Pods_litewalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_litewalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4E46FD36E8E1D25306C715 /* Pods-litewallet-dev.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewallet-dev.development.xcconfig"; path = "Target Support Files/Pods-litewallet-dev/Pods-litewallet-dev.development.xcconfig"; sourceTree = "<group>"; };
+		F79D048A45E84D082B88B59C /* Pods-litewallet-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litewallet-dev.release.xcconfig"; path = "Target Support Files/Pods-litewallet-dev/Pods-litewallet-dev.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2042,6 +2066,7 @@
 				1B86CE9A2091528B00BCE82E /* libbz2.framework in Frameworks */,
 				1B86CE9B2091528B00BCE82E /* sqlite3.framework in Frameworks */,
 				1B86CE9C2091528B00BCE82E /* libBRCore.a in Frameworks */,
+				37E9569F9BABBCF71E212E09 /* Pods_litewallet_dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2111,6 +2136,7 @@
 				223DB21B1DF69F0F0076A151 /* libbz2.framework in Frameworks */,
 				752FB04D1DF8BF4B009086FB /* sqlite3.framework in Frameworks */,
 				759DA0BE1DAC36A3008CC49B /* libBRCore.a in Frameworks */,
+				3E32B2E8D8F22E151BB383D6 /* Pods_litewallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2118,6 +2144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA719F60BA2740A2759FA445 /* Pods_litewalletTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2125,6 +2152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E695DE7CB62E673CECA5CB1 /* Pods_litewalletUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2528,6 +2556,29 @@
 				24B8FAD12162B10200A155B1 /* BuyCenterWebViewController.swift */,
 			);
 			name = BuyCenter;
+			sourceTree = "<group>";
+		};
+		332981F94A70D87442014EAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F02C8CF669A463D1A99116C /* Pods-litewallet.development.xcconfig */,
+				3F8585A4C6D80554AA793C91 /* Pods-litewallet.testnet.xcconfig */,
+				B5825D5E65721ACD98225E85 /* Pods-litewallet.release.xcconfig */,
+				1047248DBEC00D9353CFF850 /* Pods-litewallet.testflight.xcconfig */,
+				EC4E46FD36E8E1D25306C715 /* Pods-litewallet-dev.development.xcconfig */,
+				B1A9427475508081E824F685 /* Pods-litewallet-dev.testnet.xcconfig */,
+				F79D048A45E84D082B88B59C /* Pods-litewallet-dev.release.xcconfig */,
+				53A8972F731BA5EDFBE880CC /* Pods-litewallet-dev.testflight.xcconfig */,
+				C3B2E3E6D71602B9C892D133 /* Pods-litewalletTests.development.xcconfig */,
+				0D19C945B8C0AF090E0D2BEC /* Pods-litewalletTests.testnet.xcconfig */,
+				B5E41DE64BB9014BA92966CC /* Pods-litewalletTests.release.xcconfig */,
+				CC0DF47FE45F91C375D8F0FA /* Pods-litewalletTests.testflight.xcconfig */,
+				3EA92A6C1BD0DB74CB3C28DA /* Pods-litewalletUITests.development.xcconfig */,
+				B6ADB2BED42DDF48E669C06C /* Pods-litewalletUITests.testnet.xcconfig */,
+				51831928495B3E09B7B0BA0B /* Pods-litewalletUITests.release.xcconfig */,
+				72EC4398B50834DBDF08A703 /* Pods-litewalletUITests.testflight.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		755CD3831DAA0E3E0075898E /* unbound */ = {
@@ -3236,6 +3287,7 @@
 				75B6F52F1DA71DCC0031A93F /* Modules */,
 				75A2A7F11DA5935F00A983D8 /* Frameworks */,
 				75A2A7911DA5934300A983D8 /* Products */,
+				332981F94A70D87442014EAB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3390,6 +3442,10 @@
 				75FEFD1B1DAED56E00203D3A /* libsqlite3.tbd */,
 				75A2A7F21DA5935F00A983D8 /* Messages.framework */,
 				75A2A8091DA5936F00A983D8 /* NotificationCenter.framework */,
+				516E0E5C9B2396873BA39DCC /* Pods_litewallet.framework */,
+				DB5BB07986D17E1517C6AB35 /* Pods_litewallet_dev.framework */,
+				DBF21E47AF5E6448647A4C25 /* Pods_litewalletTests.framework */,
+				26E5C1283C51F199DC6164C1 /* Pods_litewalletUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3848,6 +3904,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B86CEB42091528B00BCE82E /* Build configuration list for PBXNativeTarget "litewallet-dev" */;
 			buildPhases = (
+				B61991C717F8A518FE8E61D9 /* [CP] Check Pods Manifest.lock */,
 				1B86CDC92091528B00BCE82E /* Sources */,
 				1B86CE922091528B00BCE82E /* Frameworks */,
 				1B86CE9D2091528B00BCE82E /* Resources */,
@@ -3855,6 +3912,7 @@
 				1B86CEAC2091528B00BCE82E /* Embed App Extensions */,
 				1B86CEAF2091528B00BCE82E /* Embed Frameworks */,
 				1B86CEB22091528B00BCE82E /* Icon Versioning */,
+				AC1EEFDECC79721636BB7A18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3997,6 +4055,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75A2A7E31DA5934400A983D8 /* Build configuration list for PBXNativeTarget "litewallet" */;
 			buildPhases = (
+				B01DD9BBBC17644E6085CFAA /* [CP] Check Pods Manifest.lock */,
 				75A2A78C1DA5934300A983D8 /* Sources */,
 				75A2A78D1DA5934300A983D8 /* Frameworks */,
 				75A2A78E1DA5934300A983D8 /* Resources */,
@@ -4004,6 +4063,7 @@
 				75A2A8031DA5935F00A983D8 /* Embed App Extensions */,
 				22A9A9831DF63288000F0016 /* Embed Frameworks */,
 				CEE0EF531EBF8C8A0018DB36 /* Icon Versioning */,
+				57660296404DBD663C29693C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -4024,6 +4084,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75A2A7E61DA5934400A983D8 /* Build configuration list for PBXNativeTarget "litewalletTests" */;
 			buildPhases = (
+				9F5371F75A93FC08D93D8733 /* [CP] Check Pods Manifest.lock */,
 				75A2A7A01DA5934300A983D8 /* Sources */,
 				75A2A7A11DA5934300A983D8 /* Frameworks */,
 				75A2A7A21DA5934300A983D8 /* Resources */,
@@ -4042,6 +4103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75A2A7E91DA5934400A983D8 /* Build configuration list for PBXNativeTarget "litewalletUITests" */;
 			buildPhases = (
+				BB90C4A3247E0635EEAD8E5C /* [CP] Check Pods Manifest.lock */,
 				75A2A7AB1DA5934300A983D8 /* Sources */,
 				75A2A7AC1DA5934300A983D8 /* Frameworks */,
 				75A2A7AD1DA5934300A983D8 /* Resources */,
@@ -4494,7 +4556,131 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/scripts/icon_versioning.sh\"";
+			shellScript = "\"${SRCROOT}/scripts/icon_versioning.sh\"\n";
+		};
+		57660296404DBD663C29693C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-litewallet/Pods-litewallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-litewallet/Pods-litewallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F5371F75A93FC08D93D8733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-litewalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC1EEFDECC79721636BB7A18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-litewallet-dev/Pods-litewallet-dev-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-litewallet-dev/Pods-litewallet-dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B01DD9BBBC17644E6085CFAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-litewallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B61991C717F8A518FE8E61D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-litewallet-dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB90C4A3247E0635EEAD8E5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-litewalletUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		CEE0EF531EBF8C8A0018DB36 /* Icon Versioning */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -5434,6 +5620,7 @@
 /* Begin XCBuildConfiguration section */
 		1B86CEB52091528B00BCE82E /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4E46FD36E8E1D25306C715 /* Pods-litewallet-dev.development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppDevIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -5464,6 +5651,7 @@
 		};
 		1B86CEB62091528B00BCE82E /* Testnet */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A9427475508081E824F685 /* Pods-litewallet-dev.testnet.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppDevIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -5494,6 +5682,7 @@
 		};
 		1B86CEB82091528B00BCE82E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79D048A45E84D082B88B59C /* Pods-litewallet-dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppDevIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -5522,6 +5711,7 @@
 		};
 		1B86CEB92091528B00BCE82E /* Testflight */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A8972F731BA5EDFBE880CC /* Pods-litewallet-dev.testflight.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppDevIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -5956,7 +6146,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -6013,7 +6203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/litewallet/src/Platform";
@@ -6107,6 +6297,7 @@
 		};
 		75A2A7E41DA5934400A983D8 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F02C8CF669A463D1A99116C /* Pods-litewallet.development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -6133,6 +6324,7 @@
 		};
 		75A2A7E51DA5934400A983D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5825D5E65721ACD98225E85 /* Pods-litewallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -6157,6 +6349,7 @@
 		};
 		75A2A7E71DA5934400A983D8 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B2E3E6D71602B9C892D133 /* Pods-litewalletTests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -6173,6 +6366,7 @@
 		};
 		75A2A7E81DA5934400A983D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E41DE64BB9014BA92966CC /* Pods-litewalletTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -6188,6 +6382,7 @@
 		};
 		75A2A7EA1DA5934400A983D8 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA92A6C1BD0DB74CB3C28DA /* Pods-litewalletUITests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -6203,6 +6398,7 @@
 		};
 		75A2A7EB1DA5934400A983D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51831928495B3E09B7B0BA0B /* Pods-litewalletUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
@@ -6391,7 +6587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -6406,6 +6602,7 @@
 		};
 		CEA7E69C1F0AAA84001F8C27 /* Testnet */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8585A4C6D80554AA793C91 /* Pods-litewallet.testnet.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -6432,6 +6629,7 @@
 		};
 		CEA7E69D1F0AAA84001F8C27 /* Testnet */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D19C945B8C0AF090E0D2BEC /* Pods-litewalletTests.testnet.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -6448,6 +6646,7 @@
 		};
 		CEA7E69E1F0AAA84001F8C27 /* Testnet */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6ADB2BED42DDF48E669C06C /* Pods-litewalletUITests.testnet.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -6698,7 +6897,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/litewallet/src/Platform";
@@ -6712,6 +6911,7 @@
 		};
 		CEE0EF551EBF8D7F0018DB36 /* Testflight */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1047248DBEC00D9353CFF850 /* Pods-litewallet.testflight.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -6736,6 +6936,7 @@
 		};
 		CEE0EF561EBF8D7F0018DB36 /* Testflight */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0DF47FE45F91C375D8F0FA /* Pods-litewalletTests.testflight.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -6751,6 +6952,7 @@
 		};
 		CEE0EF571EBF8D7F0018DB36 /* Testflight */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72EC4398B50834DBDF08A703 /* Pods-litewalletUITests.testflight.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
